@@ -6,6 +6,12 @@ export default {
       fontFamily: {
         Sen: ["Sen"],
       },
+      colors: {
+        "primary-blue": "#0a1930",
+        "main-heading-color": "#cedbfb",
+        "secondary-font-color": "#8893b3",
+        "aqua-color": "#58c7b7",
+      },
     },
   },
   plugins: [],

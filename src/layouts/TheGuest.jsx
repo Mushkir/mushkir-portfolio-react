@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const TheGuestLayout = () => {
   return (
-    <div>
+    <div className="font-Sen">
       <TheNavBar />
       <Outlet />
     </div>
