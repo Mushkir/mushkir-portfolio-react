@@ -11,6 +11,8 @@ export default {
         "main-heading-color": "#cedbfb",
         "secondary-font-color": "#8893b3",
         "aqua-color": "#58c7b7",
+        // "white-variant": "#FFF7F1",
+        "white-variant": "#F9F9F9",
       },
     },
   },

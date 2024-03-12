@@ -1,13 +1,25 @@
 import { Link } from "react-router-dom";
 import "react-tooltip/dist/react-tooltip.css";
 import SocialLinks from "../components/SocialLinks";
+import HTMLIcon from "../components/Icons/HTMLIcon";
+import CSSIcon from "../components/Icons/CSSIcon";
+import JavaScriptIcon from "../components/Icons/JavaScript";
+import BootstrapIcon from "../components/Icons/BootstrapIcon";
+import TailwindCSSIcon from "../components/Icons/TailwindIcon";
+import MongoDBIcon from "../components/Icons/MongoDBIcon";
+import ExpressJsIcon from "../components/Icons/ExpressJsIcon";
+import ReactJsICon from "../components/Icons/ReactJsIcon";
+import NodeJsIcon from "../components/Icons/NodeJsIcon";
+import FirebaseIcon from "../components/Icons/FirebaseIcon";
+import PHPIcon from "../components/Icons/PHPIcon";
+import MySQLIcon from "../components/Icons/MySQLIcon";
 // import { Tooltip } from "react-tooltip";
 
 const HomePage = () => {
   return (
     <div>
       <div className="bg-primary-blue px-5 md:px-20 py-10 pt-20">
-        <div className="md:flex justify-between ">
+        <div className="md:flex justify-between mt-12 md:mt-28">
           {/* Hero Details */}
           <div className="mb-5 md:mt-10">
             <div className="mb-2">
@@ -46,11 +58,10 @@ const HomePage = () => {
       </div>
 
       {/* About Div */}
-      <div
-        className="px-5 md:px-20 pt-28 py-20 bg-secondary-font-color"
-        id="about"
-      >
-        <h4 className="text-3xl font-semibold text-primary-blue mb-5">About</h4>
+      <div className="px-5 md:px-20 py-20 bg-secondary-font-color" id="about">
+        <h4 className="text-center md:text-left text-3xl font-semibold text-primary-blue mb-5">
+          About
+        </h4>
 
         <div>
           <p className=" text-justify text-lg text-[#222f44]">
@@ -145,6 +156,54 @@ const HomePage = () => {
         </div>
       </div>
       {/* End of About Div */}
+
+      {/* Tech stacks Div */}
+      <div
+        className=" bg-primary-blue text-aqua-color px-5 md:px-20 py-20"
+        id="stacks"
+      >
+        <h4 className="text-3xl text-center md:text-left font-semibold text-main-heading-color mb-5">
+          Tech Stacks
+        </h4>
+
+        <div className="flex flex-wrap justify-center gap-10 items-center mt-5">
+          {/* HTML5 */}
+          <HTMLIcon />
+
+          {/* CSS3 */}
+          <CSSIcon />
+
+          {/* JavaScript */}
+          <JavaScriptIcon />
+
+          {/* Bootstrap */}
+          <BootstrapIcon />
+
+          {/* Tailwind CSS */}
+          <TailwindCSSIcon />
+
+          {/* MongoDB */}
+          <MongoDBIcon />
+
+          {/* Express.js */}
+          <ExpressJsIcon />
+
+          {/* React */}
+          <ReactJsICon />
+
+          {/* Node.js */}
+          <NodeJsIcon />
+
+          {/* Firebase */}
+          <FirebaseIcon />
+
+          {/* PHP */}
+          <PHPIcon />
+
+          {/* MySQL */}
+          <MySQLIcon />
+        </div>
+      </div>
     </div>
   );
 };
