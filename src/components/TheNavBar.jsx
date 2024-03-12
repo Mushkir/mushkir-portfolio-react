@@ -8,7 +8,7 @@ const TheNavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="bg-gray-800 px-5 sm:px-20 py-10">
+    <nav className="bg-primary-blue px-5 sm:px-20 py-10">
       <div className="flex items-center justify-between">
         <div className="flex items-center flex-col">
           <NavLink
@@ -20,27 +20,39 @@ const TheNavBar = () => {
         </div>
 
         <ul
-          className={`hidden md:flex items-center space-x-10 text-xl ${
+          className={`hidden lg:flex items-center text-xl ${
             isOpen ? "block" : "hidden"
           }`}
         >
           <li>
-            <NavLink to={"/tasks"} className="text-main-heading-color">
+            <NavLink
+              to={"/tasks"}
+              className="text-main-heading-color px-5 py-2 hover:bg-aqua-color hover:text-primary-blue hover:transition 500 hover:rounded-md"
+            >
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to={"exp"} className="text-main-heading-color">
+            <NavLink
+              to={"exp"}
+              className="text-main-heading-color px-5 py-2  hover:bg-aqua-color hover:text-primary-blue hover:transition 500 hover:rounded-md"
+            >
               Experience
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/services"} className="text-main-heading-color">
+            <NavLink
+              to={"/services"}
+              className="text-main-heading-color px-5 py-2  hover:bg-aqua-color hover:text-primary-blue hover:transition 500 hover:rounded-md"
+            >
               Services
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/contact"} className="text-main-heading-color">
+            <NavLink
+              to={"/contact"}
+              className="text-main-heading-color px-5 py-2  hover:bg-aqua-color hover:text-primary-blue hover:transition 500 hover:rounded-md"
+            >
               Contact
             </NavLink>
           </li>
@@ -54,7 +66,7 @@ const TheNavBar = () => {
           </li>
         </ul>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             className="focus:outline-none text-main-heading-color"
             onClick={toggleMenu}
@@ -84,22 +96,34 @@ const TheNavBar = () => {
       >
         <ul className="flex flex-col space-y-2">
           <li>
-            <NavLink to={"/tasks"} className="text-main-heading-color">
+            <NavLink
+              to={"/tasks"}
+              className="text-main-heading-color hover:text-aqua-color hover:transition 500"
+            >
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to={"exp"} className="text-main-heading-color">
+            <NavLink
+              to={"exp"}
+              className="text-main-heading-color hover:text-aqua-color hover:transition 500"
+            >
               Experience
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/services"} className="text-main-heading-color">
+            <NavLink
+              to={"/services"}
+              className="text-main-heading-color hover:text-aqua-color hover:transition 500"
+            >
               Services
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/contact"} className="text-main-heading-color">
+            <NavLink
+              to={"/contact"}
+              className="text-main-heading-color hover:text-aqua-color hover:transition 500"
+            >
               Contact
             </NavLink>
           </li>
