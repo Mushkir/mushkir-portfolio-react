@@ -4,6 +4,7 @@ import "./assets/css/index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import TheGuestLayout from "./layouts/TheGuest.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import TaskPage from "./pages/TaskPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+      },
+      {
+        path: "/tasks",
+        element: <TaskPage />,
       },
     ],
   },
