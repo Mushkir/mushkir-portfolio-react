@@ -91,7 +91,7 @@ const TheNavBar = () => {
         </div>
         {/* Mobile Menu */}
         <div
-          className={` text-main-heading-color md:hidden mt-4 ${
+          className={` text-main-heading-color lg:hidden mt-4 ${
             isOpen ? "block" : "hidden"
           }`}
         >
