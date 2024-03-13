@@ -73,7 +73,7 @@ const BootstrapIcon = () => {
       </svg>
 
       {/* Name: Bootstrap */}
-      <span className="text-center">Bootstrap</span>
+      <span className="text-center">Bootstrap 5</span>
     </div>
   );
 };

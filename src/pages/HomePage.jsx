@@ -3,6 +3,7 @@ import HeroDetail from "../components/HeroDetail";
 import AboutDetail from "../components/AboutDetail";
 import TechStacks from "../components/TechStacks";
 import ServicesInfo from "../components/ServicesDetail";
+import TheFooterSection from "../components/Footer";
 // import { Tooltip } from "react-tooltip";
 
 const HomePage = () => {
@@ -15,6 +16,8 @@ const HomePage = () => {
       <TechStacks />
 
       <ServicesInfo />
+
+      <TheFooterSection />
     </div>
   );
 };
