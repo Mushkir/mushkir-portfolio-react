@@ -44,7 +44,7 @@ const TheNavBar = () => {
             <li>
               <a
                 href="#services"
-                className="text-main-heading-color px-5 py-2  hover:bg-aqua-color hover:text-primary-blue hover:transition 500 hover:rounded-md"
+                className="text-main-heading-color px-5 py-2  hover:text-aqua-color hover:transition 500 hover:rounded-md"
               >
                 Services
               </a>
@@ -52,7 +52,7 @@ const TheNavBar = () => {
             <li>
               <a
                 href="#contact"
-                className="text-main-heading-color px-5 py-2  hover:bg-aqua-color hover:text-primary-blue hover:transition 500 hover:rounded-md"
+                className="text-main-heading-color px-5 py-2  hover:text-aqua-color hover:transition 500 hover:rounded-md"
               >
                 Contact
               </a>
