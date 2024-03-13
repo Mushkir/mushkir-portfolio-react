@@ -2,8 +2,8 @@ import SocialLinks from "./SocialLinks";
 
 const HeroDetail = () => {
   return (
-    <div className="bg-primary-blue px-5 md:px-20 py-10 pt-20">
-      <div className="md:flex justify-between mt-12 md:mt-28">
+    <div className="bg-primary-blue px-5 md:px-20 pt-28 pb-28">
+      <div className="md:flex gap-20 justify-between mt-12 md:mt-28">
         {/* Hero Details */}
         <div className="mb-5 md:mt-10">
           <div className="mb-2">
@@ -30,11 +30,11 @@ const HeroDetail = () => {
 
         {/* Hero Image */}
         <div>
-          <div className="md:h-[600px] md:w-[500px]">
+          <div className="w-[250px] h-[250px] mx-auto md:h-[300px] md:w-[300px] rounded-full">
             <img
-              src="src/assets/img/mushkir.png"
+              src="src/assets/img/mushkir-image.JPG"
               alt="Mushkir Image / Mohamed Mushkir Image"
-              className=" h-full w-full object-cover"
+              className=" h-full w-full object-cover rounded-full"
             />
           </div>
         </div>

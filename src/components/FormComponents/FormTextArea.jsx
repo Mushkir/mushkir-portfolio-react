@@ -3,14 +3,17 @@ import PropTypes from "prop-types";
 const FormTextArea = ({ name, placeholder }) => {
   return (
     <div>
-      <label htmlFor={name}>Message</label>
+      <label htmlFor={name} className="text-main-heading-color font-semibold">
+        Message
+      </label>
       <div>
         <textarea
           name={name}
           id={name}
           rows={5}
-          className="w-full p-3 rounded-md outline-none text-primary-blue capitalize mt-2 bg-secondary-font-color"
+          className="w-full p-3 rounded-md outline-none text-primary-blue capitalize mt-2 bg-secondary-font-color placeholder-primary-blue"
           placeholder={placeholder}
+          autoComplete="off"
         />
       </div>
     </div>

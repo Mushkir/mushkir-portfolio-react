@@ -42,20 +42,20 @@ const TheNavBar = () => {
               </a>
             </li>
             <li>
-              <NavLink
-                to={"/services"}
+              <a
+                href="#services"
                 className="text-main-heading-color px-5 py-2  hover:bg-aqua-color hover:text-primary-blue hover:transition 500 hover:rounded-md"
               >
                 Services
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                to={"/contact"}
+              <a
+                href="#contact"
                 className="text-main-heading-color px-5 py-2  hover:bg-aqua-color hover:text-primary-blue hover:transition 500 hover:rounded-md"
               >
                 Contact
-              </NavLink>
+              </a>
             </li>
             <li>
               <Link
