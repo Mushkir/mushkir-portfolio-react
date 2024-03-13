@@ -16,7 +16,9 @@ const FormTextArea = ({ name, placeholder, register, errors }) => {
           autoComplete="off"
           {...register}
         />
-        {errors && <small className="text-red-500">{errors.message}</small>}
+        {errors && (
+          <small className="text-red-500 block mt-1">{errors.message}</small>
+        )}
       </div>
     </div>
   );

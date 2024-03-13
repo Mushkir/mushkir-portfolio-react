@@ -67,7 +67,7 @@ const TheFooterSection = () => {
         className=" bg-primary-blue text-aqua-color px-5 md:px-20 py-20 lg:flex items-center justify-between gap-20"
         id="contact"
       >
-        <div className="w-full mb-10">
+        <div className="w-full mb-20 sm:mb-10">
           <h4 className="text-3xl text-center md:text-left font-semibold text-main-heading-color mb-5">
             Contact
           </h4>

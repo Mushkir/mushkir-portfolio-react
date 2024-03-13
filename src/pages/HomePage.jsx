@@ -4,6 +4,7 @@ import AboutDetail from "../components/AboutDetail";
 import TechStacks from "../components/TechStacks";
 import ServicesInfo from "../components/ServicesDetail";
 import TheFooterSection from "../components/Footer";
+import TheFootNote from "../components/TheFootNote";
 // import { Tooltip } from "react-tooltip";
 
 const HomePage = () => {
@@ -18,6 +19,8 @@ const HomePage = () => {
       <ServicesInfo />
 
       <TheFooterSection />
+
+      <TheFootNote />
     </div>
   );
 };

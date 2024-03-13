@@ -24,7 +24,9 @@ const FormInput = ({
           autoComplete="off"
           {...register}
         />
-        {errors && <small className="text-red-500">{errors.message}</small>}
+        {errors && (
+          <small className="text-red-500 block mt-1.5">{errors.message}</small>
+        )}
       </div>
     </div>
   );

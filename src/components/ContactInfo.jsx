@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const ContactInfo = () => {
   return (
-    <div className=" space-y-5 w-full">
+    <div className="space-y-5 w-full">
       {/* Email */}
-      <div className="flex items-center space-x-10 text-lg">
+      <div className="flex flex-col sm:flex-row items-center sm:space-x-10 text-lg">
         <strong className="text-main-heading-color">Email Address :</strong>
         <a
           href="mailto:mushkirmohamed@gmail.com"
@@ -15,7 +15,7 @@ const ContactInfo = () => {
       </div>
 
       {/* LinkedIn */}
-      <div className="flex items-center space-x-20 text-lg">
+      <div className="flex flex-col sm:flex-row items-center sm:space-x-20 text-lg">
         <strong className="text-main-heading-color">LinkedIn :</strong>
         <Link
           to={"https://www.linkedin.com/in/mohamed-mushkir/"}
@@ -27,7 +27,7 @@ const ContactInfo = () => {
       </div>
 
       {/* GitHub */}
-      <div className="flex items-center space-x-24 text-lg">
+      <div className="flex flex-col sm:flex-row items-center sm:space-x-24 text-lg">
         <strong className="text-main-heading-color">GitHub :</strong>
         <Link
           to={"https://github.com/Mushkir"}
@@ -39,7 +39,7 @@ const ContactInfo = () => {
       </div>
 
       {/* Contact No. */}
-      <div className="flex items-center space-x-[58px] text-lg">
+      <div className="flex flex-col sm:flex-row items-center sm:space-x-[58px] text-lg">
         <strong className="text-main-heading-color">Contact No :</strong>
         <a
           href="tel:+94777195282"
