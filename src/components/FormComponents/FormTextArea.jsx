@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const FormTextArea = ({ name, placeholder }) => {
+const FormTextArea = ({ name, placeholder, register, errors }) => {
   return (
     <div>
       <label htmlFor={name} className="text-main-heading-color font-semibold">
@@ -14,7 +14,9 @@ const FormTextArea = ({ name, placeholder }) => {
           className="w-full p-3 rounded-md outline-none text-primary-blue capitalize mt-2 bg-secondary-font-color placeholder-primary-blue"
           placeholder={placeholder}
           autoComplete="off"
+          {...register}
         />
+        {errors && <small className="text-red-500">{errors.message}</small>}
       </div>
     </div>
   );
@@ -23,6 +25,8 @@ const FormTextArea = ({ name, placeholder }) => {
 FormTextArea.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
+  register: PropTypes.object,
+  errors: PropTypes.object,
 };
 
 export default FormTextArea;

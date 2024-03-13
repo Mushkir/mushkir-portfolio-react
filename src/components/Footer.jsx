@@ -3,15 +3,40 @@ import emailjs from "@emailjs/browser";
 import FormInput from "./FormComponents/FormInput";
 import FormTextArea from "./FormComponents/FormTextArea";
 import ContactInfo from "./ContactInfo";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 
 const TheFooterSection = () => {
+  const schemaValidation = z.object({
+    user_name: z
+      .string()
+      .min(3, { message: "Name must be at least 3 characters." })
+      .max(10, { message: "Name can not be exceed to 10 characters." }),
+    user_email: z
+      .string()
+      .min(1, { message: "Email is required." })
+      .email("Invalid Email."),
+    message: z
+      .string()
+      .min(20, { message: "Message should be minimum 20 characters." })
+      .max(100, { message: "Message can not be exceed to 100 characters." }),
+  });
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: zodResolver(schemaValidation),
+  });
+
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = (data) => {
+    console.log(data.user_name);
 
-    const viewerNameEl = e.target[0].value;
-
+    // e.preventDefault();
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -25,7 +50,7 @@ const TheFooterSection = () => {
         () => {
           console.log("SUCCESS!");
           alert(
-            `Dear ${viewerNameEl}! Your message has been sent to Mushkir's (my) Email.
+            `Dear ${data.user_name}! Your message has been sent to Mushkir's (my) Email.
             Thank you for Exploring My Portfolio.`
           );
         },
@@ -46,22 +71,37 @@ const TheFooterSection = () => {
           <h4 className="text-3xl text-center md:text-left font-semibold text-main-heading-color mb-5">
             Contact
           </h4>
-          <form ref={form} onSubmit={sendEmail} className="w-full">
+          <form
+            ref={form}
+            onSubmit={handleSubmit(sendEmail)}
+            className="w-full"
+          >
             <FormInput
               type="text"
               id="user_name"
+              name="user_name"
               label="Name"
               placeholder="Enter you name"
+              register={register("user_name")}
+              errors={errors.user_name}
             />
 
             <FormInput
               type="email"
               id="user_email"
+              name="user_email"
               label="Email"
               placeholder="Enter your Email"
+              register={register("user_email")}
+              errors={errors.user_email}
             />
 
-            <FormTextArea name="message" placeholder="Enter your message" />
+            <FormTextArea
+              name="message"
+              placeholder="Enter your message"
+              register={register("message")}
+              errors={errors.message}
+            />
 
             <div className="flex justify-end">
               <button

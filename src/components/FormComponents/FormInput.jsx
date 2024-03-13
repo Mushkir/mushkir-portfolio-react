@@ -1,6 +1,14 @@
 import PropTypes from "prop-types";
 
-const FormInput = ({ type = "text", id, label, placeholder }) => {
+const FormInput = ({
+  type = "text",
+  id,
+  name,
+  label,
+  placeholder,
+  register,
+  errors,
+}) => {
   return (
     <div className="w-full mb-5">
       <label htmlFor={id} className=" text-main-heading-color font-semibold">
@@ -10,11 +18,13 @@ const FormInput = ({ type = "text", id, label, placeholder }) => {
         <input
           type={type}
           id={id}
-          name={id}
-          className="w-full p-3 rounded-md outline-none text-primary-blue capitalize mt-2 bg-secondary-font-color placeholder-primary-blue"
+          name={name}
+          className="w-full p-3 rounded-md outline-none text-primary-blue mt-2 bg-secondary-font-color placeholder-primary-blue"
           placeholder={placeholder}
           autoComplete="off"
+          {...register}
         />
+        {errors && <small className="text-red-500">{errors.message}</small>}
       </div>
     </div>
   );
@@ -25,6 +35,9 @@ FormInput.propTypes = {
   id: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
+  register: PropTypes.object,
+  name: PropTypes.string,
+  errors: PropTypes.object,
 };
 
 export default FormInput;
