@@ -21,10 +21,18 @@ const TheNavBar = () => {
           </div>
 
           <ul
-            className={`hidden lg:flex items-center text-xl ${
+            className={`hidden xl:flex items-center text-xl ${
               isOpen ? "block" : "hidden"
             }`}
           >
+            <li>
+              <Link
+                to={"/"}
+                className="text-main-heading-color px-5 py-2 hover:text-aqua-color hover:transition 500 hover:rounded-md"
+              >
+                Home
+              </Link>
+            </li>
             <li>
               <a
                 href="#about"
@@ -75,7 +83,7 @@ const TheNavBar = () => {
             </li>
           </ul>
 
-          <div className="lg:hidden">
+          <div className="xl:hidden">
             <button
               className="focus:outline-none text-main-heading-color"
               onClick={toggleMenu}
@@ -99,7 +107,7 @@ const TheNavBar = () => {
         </div>
         {/* Mobile Menu */}
         <div
-          className={` text-main-heading-color lg:hidden mt-4 ${
+          className={` text-main-heading-color xl:hidden mt-4 ${
             isOpen ? "block" : "hidden"
           }`}
         >

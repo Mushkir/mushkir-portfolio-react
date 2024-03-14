@@ -1,39 +1,57 @@
-const TheTaskInfoCard = (props) => {
-  console.log(props);
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
+const TheTaskInfoCard = ({
+  description,
+  githubUrl,
+  imgUrl,
+  liveUrl,
+  techStacks,
+  title,
+  type,
+}) => {
   return (
-    <div className="z-0 relative w-full max-w-[350px] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+    <div className="z-0 relative w-full md:max-w-[350px]  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
       <div className="z-0 relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
         <img
-          src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"
-          alt="ui/ux review check"
+          src={imgUrl}
+          className=" w-full h-[300px] object-cover"
+          alt={`${title}'s Screenshot`}
         />
       </div>
 
       <div className="p-6">
         {/* Heading */}
         <div className="flex items-center justify-between mb-3">
-          <h5 className="block font-Sen text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
-            Wooden House, Florida
+          <h5 className="block font-Sen text-xl antialiased font-bold leading-snug tracking-normal text-blue-gray-900">
+            {title}
           </h5>
         </div>
 
         {/* Description */}
         <p className="block font-Sen text-base antialiased font-light leading-relaxed text-gray-700">
-          Enter a freshly updated and thoughtfully furnished peaceful home
-          surrounded by ancient trees, stone walls, and open meadows.
+          {description}
         </p>
 
         {/* Tech Stacks */}
-        <div className="mt-5">
+        <div className="mt-3">
           <div className="mb-2">
             <strong>
-              Category: <span>Frontend</span>
+              Category:{" "}
+              <span>
+                {type == "F"
+                  ? "Frontend"
+                  : type == "B"
+                  ? "Backend"
+                  : type == "F&B"
+                  ? "Frontend and Backend"
+                  : "Sorry! Invalid Criteria."}
+              </span>
             </strong>
           </div>
           <div>
             <strong>
-              Tech Stacks: <span>HTML, CSS, JavaScript</span>
+              Tech Stacks: <span>{techStacks}</span>
             </strong>
           </div>
         </div>
@@ -41,22 +59,36 @@ const TheTaskInfoCard = (props) => {
 
       {/* Buttons */}
       <div className="p-6 flex items-center gap-5">
-        <button
+        <Link
+          to={liveUrl}
+          target="_blank"
           className="block w-full select-none rounded-lg bg-primary-blue hover:bg-[#222f44] py-3.5 px-7 text-center align-middle font-Sen text-sm text-white"
           type="button"
         >
           Live
-        </button>
+        </Link>
 
-        <button
+        <Link
+          to={githubUrl}
+          target="_blank"
           className="block w-full select-none rounded-lg bg-gray-900 hover:bg-gray-800 py-3.5 px-7 text-center align-middle font-Sen text-sm text-white"
           type="button"
         >
           GitHub
-        </button>
+        </Link>
       </div>
     </div>
   );
+};
+
+TheTaskInfoCard.propTypes = {
+  githubUrl: PropTypes.string,
+  description: PropTypes.string,
+  imgUrl: PropTypes.string,
+  liveUrl: PropTypes.string,
+  techStacks: PropTypes.array,
+  title: PropTypes.string,
+  type: PropTypes.string,
 };
 
 export default TheTaskInfoCard;
