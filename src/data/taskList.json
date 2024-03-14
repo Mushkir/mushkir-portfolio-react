@@ -6,49 +6,57 @@
         "title": "My Resume",
         "live": "https://mushkir.github.io/Mushkir_Resume",
         "techStacks": ["HTML", "CSS"],
-        "github": "https://github.com/Mushkir/Mushkir_Resume"
+        "github": "https://github.com/Mushkir/Mushkir_Resume",
+        "imgLink": "https://i.ibb.co/nkPcSxY/screencapture-mushkir-github-io-Mushkir-Resume-2024-03-14-17-43-03.png"
       },
+
       {
         "id": 2,
         "title": "My Portfolio",
         "live": "https://mushkir.github.io/mushkir_portfolio/",
         "techStacks": ["HTML", "CSS"],
-        "github": "https://github.com/Mushkir/mushkir_portfolio"
+        "github": "https://github.com/Mushkir/mushkir_portfolio",
+        "imgLink": "https://i.ibb.co/C78tMd3/screencapture-mushkir-github-io-mushkir-portfolio-2024-03-14-17-43-21.png"
       },
       {
         "id": 4,
         "title": "Movie Listing - Bootstrap",
         "live": "https://mushkir.github.io/movie_cafe_UI_with_bootsrap/ ",
         "techStacks": ["HTML", "CSS", "Bootstrap"],
-        "github": "https://github.com/Mushkir/movie_cafe_UI_with_bootsrap"
+        "github": "https://github.com/Mushkir/movie_cafe_UI_with_bootsrap",
+        "imgLink": "https://i.ibb.co/tb2jnVj/screencapture-mushkir-github-io-movie-cafe-UI-with-bootsrap-2024-03-14-17-44-50.png"
       },
       {
         "id": 5,
         "title": "WhatsApp UI Clone - TailwindCSS",
         "live": "https://mushkir.github.io/WhatsApp-iOS-UI-Sample/",
         "techStacks": ["HTML", "TailwindCSS"],
-        "github": "https://github.com/Mushkir/WhatsApp-iOS-UI-Sample"
+        "github": "https://github.com/Mushkir/WhatsApp-iOS-UI-Sample",
+        "imgLink": ""
       },
       {
         "id": 6,
         "title": "Instagram UI Clone - TailwindCSS",
         "live": "https://mushkir.github.io/Instagram-UI-TailwindCSS/",
         "techStacks": ["HTML", "TailwindCSS"],
-        "github": "https://github.com/Mushkir/WhatsApp-iOS-UI-Sample"
+        "github": "https://github.com/Mushkir/WhatsApp-iOS-UI-Sample",
+        "imgLink": ""
       },
       {
         "id": 7,
         "title": "Interns Profile - Display data based on JSON",
         "live": "https://mushkir.github.io/json-task/",
         "techStacks": ["HTML", "TailwindCSS", "JavaScript", "Vite"],
-        "github": "https://github.com/Mushkir/cyberdude-challenges/tree/main/JavaScript/02-javascript-dom/03-json-data-display-in-ui"
+        "github": "https://github.com/Mushkir/cyberdude-challenges/tree/main/JavaScript/02-javascript-dom/03-json-data-display-in-ui",
+        "imgLink": ""
       },
       {
         "id": 8,
         "title": "Post Finder - React",
         "live": "https://post-finder-react-app.netlify.app/",
         "techStacks": ["React.js", "TailwindCSS", "React Router", "Vite"],
-        "github": "https://github.com/Mushkir/post-showing-react-app-using-API"
+        "github": "https://github.com/Mushkir/post-showing-react-app-using-API",
+        "imgLink": "https://i.ibb.co/fFH2sJP/screencapture-post-finder-react-app-netlify-app-2024-03-14-22-16-13.png"
       }
     ]
   }
