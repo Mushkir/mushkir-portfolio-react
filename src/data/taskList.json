@@ -40,7 +40,7 @@
         "live": "https://mushkir.github.io/Instagram-UI-TailwindCSS/",
         "techStacks": ["HTML", "TailwindCSS"],
         "github": "https://github.com/Mushkir/WhatsApp-iOS-UI-Sample",
-        "imgLink": ""
+        "imgLink": "https://i.ibb.co/8B6tp4T/Screenshot-2024-03-14-at-22-55-30-2.png"
       },
       {
         "id": 7,
@@ -48,15 +48,23 @@
         "live": "https://mushkir.github.io/json-task/",
         "techStacks": ["HTML", "TailwindCSS", "JavaScript", "Vite"],
         "github": "https://github.com/Mushkir/cyberdude-challenges/tree/main/JavaScript/02-javascript-dom/03-json-data-display-in-ui",
-        "imgLink": ""
+        "imgLink": "https://i.ibb.co/0Chpgxx/Screenshot-2024-03-14-at-22-59-07-2.png"
       },
       {
         "id": 8,
-        "title": "Post Finder - React",
+        "title": "Post Finder - React with API",
         "live": "https://post-finder-react-app.netlify.app/",
         "techStacks": ["React.js", "TailwindCSS", "React Router", "Vite"],
         "github": "https://github.com/Mushkir/post-showing-react-app-using-API",
         "imgLink": "https://i.ibb.co/fFH2sJP/screencapture-post-finder-react-app-netlify-app-2024-03-14-22-16-13.png"
+      },
+      {
+        "id": 9,
+        "title": "JavaScript DOM - Landing Page Idea",
+        "live": "https://mushkir.github.io/javascript-dom-landing-page-idea/",
+        "techStacks": ["HTML", "TailwindCSS", "JavaScript", "Vite"],
+        "github": "https://github.com/Mushkir/javascript-dom-landing-page-idea",
+        "imgLink": "https://i.ibb.co/ZSQX32p/screencapture-mushkir-github-io-javascript-dom-landing-page-idea-index-html-2024-03-14-23-12-55.png"
       }
     ]
   }

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const TaskCard = ({ imgSource, title, liveUrl, githubUrl }) => {
   return (
-    <div className="w-[400px] border rounded-md shado bg-[#222f44] border-gray-700">
+    <div className="w-full sm:w-[400px] h-[480px] sm:h-[438px] border rounded-md shado mb-5 bg-[#222f44] border-gray-700">
       <div className="w-full h-64">
         <img
           className="rounded-t-lg w-full h-full object-cover"
@@ -12,15 +12,15 @@ const TaskCard = ({ imgSource, title, liveUrl, githubUrl }) => {
         />
       </div>
       <div className="p-5">
-        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-5">
+        <h5 className="text-lg sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-5">
           {title}
         </h5>
 
-        <div className="flex items-center gap-5">
+        <div className="sm:flex items-center gap-5">
           <Link
             to={liveUrl}
             target="_blank"
-            className=" flex w-full justify-center items-center gap-2 pl-3 pr-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className=" flex w-full justify-center items-center gap-2 pl-3 pr-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-5"
           >
             <div>
               <svg
@@ -42,7 +42,7 @@ const TaskCard = ({ imgSource, title, liveUrl, githubUrl }) => {
           <Link
             to={githubUrl}
             target="_blank"
-            className=" flex w-full justify-center items-center gap-2 pl-3 pr-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className=" flex w-full justify-center items-center gap-2 pl-3 pr-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-5"
           >
             <div>
               <svg
