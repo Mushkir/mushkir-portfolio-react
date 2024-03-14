@@ -51,6 +51,14 @@ const TheNavBar = () => {
             </li>
             <li>
               <a
+                href="#works"
+                className="text-main-heading-color px-5 py-2  hover:text-aqua-color hover:transition 500 hover:rounded-md"
+              >
+                Works
+              </a>
+            </li>
+            <li>
+              <a
                 href="#contact"
                 className="text-main-heading-color px-5 py-2  hover:text-aqua-color hover:transition 500 hover:rounded-md"
               >

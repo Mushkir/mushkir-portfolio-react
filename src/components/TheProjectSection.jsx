@@ -13,7 +13,7 @@ const TheProjectSection = () => {
   };
 
   return (
-    <div className=" bg-primary-blue px-5 md:px-20 py-20">
+    <div className=" bg-primary-blue px-5 md:px-20 py-20" id="works">
       <h4 className="text-3xl text-center md:text-left font-semibold text-main-heading-color mb-10">
         Explore My Works
       </h4>
