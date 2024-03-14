@@ -8,7 +8,7 @@ const TheNavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="relative">
+    <div className="relative z-10">
       <nav className="bg-primary-blue px-5 sm:px-20 py-10 fixed top-0 left-0 right-0">
         <div className="flex items-center justify-between">
           <div className="flex items-center flex-col">
