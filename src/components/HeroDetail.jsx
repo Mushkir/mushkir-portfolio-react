@@ -7,7 +7,7 @@ const HeroDetail = () => {
         {/* Hero Details */}
         <div className="mb-5 md:mt-10">
           <div className="mb-2">
-            <h4 className=" text-aqua-color">A Passsionate</h4>
+            <h4 className="text-aqua-color tracking-wider">A Passsionate</h4>
           </div>
 
           <div className="mb-3">
@@ -34,7 +34,7 @@ const HeroDetail = () => {
             <img
               src="src/assets/img/mushkir-image.JPG"
               alt="Mushkir Image / Mohamed Mushkir Image"
-              className=" h-full w-full object-cover rounded-full"
+              className=" h-full w-full object-cover rounded-full "
             />
           </div>
         </div>

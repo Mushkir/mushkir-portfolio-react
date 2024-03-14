@@ -11,7 +11,7 @@ const TheFooterSection = () => {
   const schemaValidation = z.object({
     user_name: z
       .string()
-      .min(3, { message: "Name must be at least 3 characters." })
+      .min(3, { message: "Name must be at least 03 characters." })
       .max(10, { message: "Name can not be exceed to 10 characters." }),
     user_email: z
       .string()
@@ -64,7 +64,7 @@ const TheFooterSection = () => {
     <div>
       {/* // * Contact Form */}
       <div
-        className=" bg-primary-blue text-aqua-color px-5 md:px-20 py-20 lg:flex items-center justify-between gap-20"
+        className="bg-black px-5 md:px-20 py-20 lg:flex items-center justify-between gap-20"
         id="contact"
       >
         <div className="w-full mb-20 sm:mb-10">

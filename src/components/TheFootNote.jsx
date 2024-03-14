@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const TheFootNote = () => {
   return (
-    <div className="bg-secondary-font-color p-4 text-center">
-      <span className="text-lg text-primary-blue ">
+    <div className=" bg-primary-blue p-4 text-center">
+      <span className="text-lg text-main-heading-color ">
         Designed and Developed by:{" "}
         <Link
           to={"https://github.com/Mushkir/mushkir-portfolio-react"}
