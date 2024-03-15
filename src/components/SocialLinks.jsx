@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const SocialLinks = () => {
   return (
-    <div className=" text-secondary-font-color text-3xl flex space-x-4">
+    <div className="text-secondary-font-color text-3xl flex justify-center sm:justify-normal space-x-4">
       {/* LinkedIn */}
       <Link
         to={"https://www.linkedin.com/in/mohamed-mushkir/"}

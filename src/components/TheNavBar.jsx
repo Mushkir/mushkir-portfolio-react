@@ -16,7 +16,7 @@ const TheNavBar = () => {
               to={"/"}
               className="flex-1 text-main-heading-color text-xl sm:text-3xl font-semibold"
             >
-              Mohamed Mushkir
+              MM
             </NavLink>
           </div>
 
@@ -64,6 +64,14 @@ const TheNavBar = () => {
               >
                 Works
               </a>
+            </li>
+            <li>
+              <NavLink
+                to={"/tasks"}
+                className="text-main-heading-color px-5 py-2  hover:text-aqua-color hover:transition 500 hover:rounded-md"
+              >
+                Total Tasks
+              </NavLink>
             </li>
             <li>
               <a
@@ -151,6 +159,14 @@ const TheNavBar = () => {
               >
                 Works
               </a>
+            </li>
+            <li>
+              <NavLink
+                to={"/tasks"}
+                className="text-main-heading-color px-5 py-2  hover:text-aqua-color hover:transition 500 hover:rounded-md"
+              >
+                Total Tasks
+              </NavLink>
             </li>
             <li>
               <a
