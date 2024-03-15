@@ -111,38 +111,54 @@ const TheNavBar = () => {
             isOpen ? "block" : "hidden"
           }`}
         >
-          <ul className="flex flex-col space-y-2">
+          <ul className="flex flex-col space-y-5">
+            <li>
+              <Link
+                to={"/"}
+                className="text-main-heading-color px-5 py-2 hover:text-aqua-color hover:transition 500 hover:rounded-md"
+              >
+                Home
+              </Link>
+            </li>
             <li>
               <a
                 href="#about"
-                className="text-main-heading-color hover:text-aqua-color hover:transition 500"
+                className="text-main-heading-color px-5 py-2 hover:text-aqua-color hover:transition 500 hover:rounded-md"
               >
                 About
               </a>
             </li>
             <li>
-              <NavLink
-                to={"exp"}
-                className="text-main-heading-color hover:text-aqua-color hover:transition 500"
+              <a
+                href="#stacks"
+                className="text-main-heading-color px-5 py-2  hover:text-aqua-color hover:transition 500 hover:rounded-md"
               >
                 Tech Stacks
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                to={"/services"}
-                className="text-main-heading-color hover:text-aqua-color hover:transition 500"
+              <a
+                href="#services"
+                className="text-main-heading-color px-5 py-2  hover:text-aqua-color hover:transition 500 hover:rounded-md"
               >
                 Services
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink
-                to={"/contact"}
-                className="text-main-heading-color hover:text-aqua-color hover:transition 500"
+              <a
+                href="#works"
+                className="text-main-heading-color px-5 py-2  hover:text-aqua-color hover:transition 500 hover:rounded-md"
+              >
+                Works
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="text-main-heading-color px-5 py-2  hover:text-aqua-color hover:transition 500 hover:rounded-md"
               >
                 Contact
-              </NavLink>
+              </a>
             </li>
             <li>
               <Link

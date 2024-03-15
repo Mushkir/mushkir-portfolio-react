@@ -8,7 +8,7 @@ const AboutDetail = () => {
       </h4>
 
       <div>
-        <p className=" text-justify text-lg text-[#222f44]">
+        <p className=" text-justify text-sm sm:text-lg text-[#222f44]">
           A Dedicated and Creative Web Designer and Developer with 06 months of
           Experience in Conceptualing, Designing, and Implementing visually
           applealing and User-friendly websites. Proficient in{" "}

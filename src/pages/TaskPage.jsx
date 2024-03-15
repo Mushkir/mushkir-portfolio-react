@@ -7,7 +7,16 @@ const TaskPage = () => {
     <div className="bg-secondary-font-color min-h-screen font-Sen">
       <div className="pt-[200px] p-10 pb-20 flex justify-center flex-wrap gap-10">
         {taskList[0].tasks.map(
-          ({ id, title, github, imgLink, live, techStacks, type }) => {
+          ({
+            id,
+            title,
+            github,
+            imgLink,
+            live,
+            techStacks,
+            type,
+            description,
+          }) => {
             // { id, title, github, imgLink, live, techStacks, type }
             // console.log(el);
             return (
@@ -15,7 +24,7 @@ const TaskPage = () => {
                 key={id}
                 imgUrl={imgLink}
                 title={title}
-                description="Enter a freshly updated and thoughtfully furnished peaceful home surrounded by ancient trees, stone walls, and open meadows."
+                description={description}
                 liveUrl={live}
                 githubUrl={github}
                 techStacks={techStacks}
