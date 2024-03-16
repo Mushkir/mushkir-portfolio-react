@@ -5,15 +5,19 @@ import TechStacks from "../components/TechStacks";
 import ServicesInfo from "../components/ServicesDetail";
 import TheFooterSection from "../components/Footer";
 import TheFootNote from "../components/TheFootNote";
-// import taskList from "../data/taskList.json";
 import TheProjectSection from "../components/TheProjectSection";
-
+import TheHeaderProgressBar from "../components/HeaderProgressBar/TheHeaderProgressBar";
+// import { motion, useScroll } from "framer-motion";
 // import { Tooltip } from "react-tooltip";
 
 const HomePage = () => {
-  // console.log(taskList[0].tasks.frontend);
+  // const { scrollYProgress } = useScroll();
+
   return (
     <div>
+      {/* Form Frame-Motion Library */}
+      <TheHeaderProgressBar />
+
       <HeroDetail />
 
       <AboutDetail />

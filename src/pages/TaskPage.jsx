@@ -1,10 +1,13 @@
 import TheTaskInfoCard from "../components/TheTaskInfoCard";
 import taskList from "../data/taskList.json";
 import TheFootNote from "../components/TheFootNote";
+import TheHeaderProgressBar from "../components/HeaderProgressBar/TheHeaderProgressBar";
 
 const TaskPage = () => {
   return (
     <div className="bg-secondary-font-color min-h-screen font-Sen">
+      <TheHeaderProgressBar />
+
       <div className="pt-[190px]">
         <h3 className=" text-center text-3xl font-semibold text-primary-blue">
           Here is a list enumerating the majority of my professional endeavors
