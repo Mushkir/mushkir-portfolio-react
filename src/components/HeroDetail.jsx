@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
 
 const HeroDetail = () => {
@@ -40,7 +41,13 @@ const HeroDetail = () => {
           {/* Social Links */}
           <SocialLinks />
 
-          <button className="w-full flex justify-center sm:justify-normal rounded-full sm:rounded-md items-center mt-5 text-aqua-color gap-2 sm:w-[220px] border-2 border-aqua-color px-5 py-2 hover:bg-aqua-color hover:text-primary-blue hover:font-semibold hover:transition 500">
+          {/* Download Button */}
+          <Link
+            to={"src/assets/docs/Mushkir.pdf"}
+            target="_blank"
+            download
+            className="w-full flex justify-center sm:justify-normal rounded-full sm:rounded-md items-center mt-5 text-aqua-color gap-2 sm:w-[220px] border-2 border-aqua-color px-5 py-2 hover:bg-aqua-color hover:text-primary-blue hover:font-semibold hover:transition 500"
+          >
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +97,7 @@ const HeroDetail = () => {
               </svg>
             </div>
             Download Resume
-          </button>
+          </Link>
         </div>
 
         {/* Hero Image */}

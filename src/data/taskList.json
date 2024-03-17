@@ -219,7 +219,7 @@
         "techStacks": ["React.js | ", "Node.js | ", "Vite"],
         "github": "https://github.com/Mushkir/interns-profile-react-node-js/tree/main",
         "imgLink": "https://res.cloudinary.com/practicaldev/image/fetch/s--Qhu3PUis--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/y63ie8bmktwik5w3mhlg.png",
-        "type": "B",
+        "type": "F&B",
         "description": ""
       },
       {
@@ -239,6 +239,23 @@
         "techStacks": ["React.js | ", "TailwindCSS | ", "Vite | ", "Firebase"],
         "github": "https://github.com/Mushkir/cyberdude-hackathon-blog-app-MERN",
         "imgLink": "https://i.ibb.co/cwXPZmP/screencapture-blogify-app-ishb-git-main-mushkirs-projects-vercel-app-2024-03-15-02-44-38.png",
+        "type": "F&B",
+        "description": ""
+      },
+      {
+        "id": 25,
+        "title": "City-Taxi",
+        "live": "",
+        "techStacks": [
+          "HTML | ",
+          "Bootstrap | ",
+          "CSS | ",
+          "JavaScript | ",
+          "PHP | ",
+          "MySQL"
+        ],
+        "github": "https://github.com/Mushkir/city-taxi-service",
+        "imgLink": "https://i.ibb.co/zRCp8YY/Screenshot-2024-03-17-at-07-15-50-2.png",
         "type": "F&B",
         "description": ""
       }
