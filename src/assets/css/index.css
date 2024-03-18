@@ -9,5 +9,5 @@ html {
 }
 
 nav .active {
-  @apply text-aqua-color;
+  @apply text-aqua-color font-semibold;
 }

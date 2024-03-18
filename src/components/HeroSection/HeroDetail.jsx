@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import SocialLinks from "./SocialLinks";
+import SocialLinks from "../SocialLinks";
+import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
 
 const HeroDetail = () => {
   return (
@@ -7,19 +8,25 @@ const HeroDetail = () => {
       <div className="md:flex gap-20 justify-between mt-12 md:mt-28">
         {/* Hero Details */}
         <div className="mb-10 sm:mb-5 md:mt-10">
-          <div className="mb-2">
-            <strong className="tracking-wider text-main-heading-color">
-              Hello, It&apos;s me
-            </strong>
-          </div>
+          <TypewriterEffectSmooth
+            words={[
+              {
+                text: "Hello, It's me",
+                className: "tracking-wider text-main-heading-color text-base",
+              },
+            ]}
+            margin={"mb-2"}
+          />
 
-          <div className="mb-3">
-            <strong className="text-main-heading-color text-3xl sm:text-4xl">
-              <span className="text-aqua-color">M</span>ohamed{" "}
-              <span className="text-aqua-color">M</span>
-              ushkir
-            </strong>
-          </div>
+          <TypewriterEffectSmooth
+            color="text-main-heading-color"
+            words={[
+              { text: "Mohamed", className: "text-3xl sm:text-4xl" },
+              { text: "Mushkir", className: "text-3xl sm:text-4xl" },
+            ]}
+            margin={"mb-3"}
+            cursorColor={"bg-aqua-color"}
+          />
 
           <div className="mb-3">
             <span className=" text-main-heading-color text-xl sm:text-2xl font-semibold">

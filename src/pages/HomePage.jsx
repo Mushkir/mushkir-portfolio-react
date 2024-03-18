@@ -1,5 +1,5 @@
 import "react-tooltip/dist/react-tooltip.css";
-import HeroDetail from "../components/HeroDetail";
+import HeroDetail from "../components/HeroSection/HeroDetail";
 import AboutDetail from "../components/AboutDetail";
 import TechStacks from "../components/TechStacks";
 import ServicesInfo from "../components/ServicesDetail";
@@ -7,7 +7,7 @@ import TheFooterSection from "../components/Footer";
 import TheFootNote from "../components/TheFootNote";
 import TheProjectSection from "../components/TheProjectSection";
 import TheHeaderProgressBar from "../components/HeaderProgressBar/TheHeaderProgressBar";
-// import { motion, useScroll } from "framer-motion";
+
 // import { Tooltip } from "react-tooltip";
 
 const HomePage = () => {
