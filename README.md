@@ -1,6 +1,6 @@
 # Mushkir Portfolio
 
-I am Mushkir and My Portfolio is a personal website created from scratch using React JS, designed to showcase my skills, projects, and personal information. This responsive portfolio serves as a digital representation of my work, providing visitors with insights into my abilities and accomplishments.
+I am Mushkir and My Portfolio is a personal website created from scratch using React JS, designed to showcase my skills, projects, and personal information. This responsive portfolio serves as a digital representation of my work, providing visitors with insights into my abilities and accomplishments. By clicking [here](https://mushkir.github.io/mushkir_portfolio/), you can explore my previous porfolio which is developed using HTML, Vanilla CSS, and Vanilla JavaScript.
 
 ### Live link
 
@@ -11,24 +11,21 @@ https://mushkir-portfolio-react.vercel.app/
 | S.No | Technologies and Libraries Used                                          |
 | :--- | ------------------------------------------------------------------------ |
 | 01   | [React Js](https://www.youtube.com/live/Yc8JxiCdNQE?si=kTkPpKa5uqfLubpC) |
+| 02   | [Tailwind CSS](https://tailwindcss.com/)                                 |
+| 03   | [Aceternity UI](https://ui.aceternity.com/)                              |
+| 04   | [AOS](https://michalsnik.github.io/aos/)                                 |
+| 05   | [Framer-Motion](https://www.framer.com/)                                 |
 
 ### Screenshots
 
-[!Screenshot01]
-https://ibb.co/CsJ9ZNj
-
-[!Screenshot02]
-https://ibb.co/p4BkMdG
-
-[!Screenshot03]
-https://ibb.co/6sYq5JQ
+[!Screenshot01]('screenshots/1.png')
 
 ## Installation
 
 - Clone the Repo into Local machine
 
 ```bash
-  git clone https://github.com/Mushkir/post-showing-react-app-using-API.git
+  git clone git@github.com:Mushkir/mushkir-portfolio-react.git
 
 ```
 
@@ -50,12 +47,6 @@ sudo npm install
 npm run dev
 ```
 
-## Internship
+### License:
 
-This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.com/cyberdudenetworks) as part of the 6-Month Free Internship program, a skill development initiative organized to enhance participants' skills. Mentoring was provided by [Mr. Anbuselvan Rocky](https://instagram.com/anbuselvanrocky). For more information, [you can contact CyberDude Networks here](https://cyberdudenetworks.com).
-
-### License: MIT (Do whatever, you want!)
-
-### Acknowledgment:
-
-- [Anbuselvan Rocky](https://fb.me/anburocky3)
+MIT
