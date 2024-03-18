@@ -1,6 +1,6 @@
 # Mushkir Portfolio
 
-I am Mushkir and My Portfolio is a personal website created from scratch using React JS, designed to showcase my skills, projects, and personal information. This responsive portfolio serves as a digital representation of my work, providing visitors with insights into my abilities and accomplishments. By clicking <a href="https://mushkir.github.io/mushkir_portfolio/" target="_blank" rel="noopener" onclick="window.open(this.href); return false;">here</a>, you can explore my previous portfolio which is developed using HTML, Vanilla CSS, and Vanilla JavaScript.
+I am Mushkir and My Portfolio is a personal website created from scratch using React JS, designed to showcase my skills, projects, and personal information. This responsive portfolio serves as a digital representation of my work, providing visitors with insights into my abilities and accomplishments. By clicking [here](https://mushkir.github.io/mushkir_portfolio/), you can explore my previous porfolio which is developed using HTML, Vanilla CSS, and Vanilla JavaScript.
 
 ### Live link
 
@@ -18,7 +18,7 @@ https://mushkir-portfolio-react.vercel.app/
 
 ### Screenshots
 
-[!Screenshot01]('screenshots/1.png')
+[!Screenshot01]('./screenshots/1.png')
 
 ## Installation
 
