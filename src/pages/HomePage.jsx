@@ -1,6 +1,6 @@
 import "react-tooltip/dist/react-tooltip.css";
 import HeroDetail from "../components/HeroSection/HeroDetail";
-import AboutDetail from "../components/AboutDetail";
+import AboutDetail from "../components/AboutDetailsSection/AboutDetail";
 import TechStacks from "../components/TechStacks";
 import ServicesInfo from "../components/ServicesDetail";
 import TheFooterSection from "../components/Footer";

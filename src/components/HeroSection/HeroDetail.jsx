@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import SocialLinks from "../SocialLinks";
 import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
+import { TextGenerateEffect } from "../ui/text-generate-effect";
 
 const HeroDetail = () => {
   return (
@@ -18,6 +19,7 @@ const HeroDetail = () => {
             margin={"mb-2"}
           />
 
+          {/* Name: Mohamed Mushkir */}
           <TypewriterEffectSmooth
             color="text-main-heading-color"
             words={[
@@ -28,7 +30,8 @@ const HeroDetail = () => {
             cursorColor={"bg-aqua-color"}
           />
 
-          <div className="mb-3">
+          {/* And I'm a Passionate Full Stack Web Developer */}
+          <div className="mb-3" data-aos="fade-right" data-aos-duration="3000">
             <span className=" text-main-heading-color text-xl sm:text-2xl font-semibold">
               And I&apos;m a{" "}
               <span className="text-aqua-color">
@@ -38,11 +41,12 @@ const HeroDetail = () => {
           </div>
 
           <div className="mb-5">
-            <p className=" text-secondary-font-color">
-              I am interested in working on challenging web-based applications
+            <TextGenerateEffect
+              words={`I am interested in working on challenging web-based applications
               or projects, as well as utilizing my development knowledge to
-              provide solutions for clients.
-            </p>
+              provide solutions for clients.`}
+              className={"text-secondary-font-color"}
+            />
           </div>
 
           {/* Social Links */}
@@ -50,6 +54,8 @@ const HeroDetail = () => {
 
           {/* Download Button */}
           <Link
+            data-aos="fade-right"
+            data-aos-duration="3000"
             to={"src/assets/docs/Mushkir.pdf"}
             target="_blank"
             download
@@ -109,7 +115,11 @@ const HeroDetail = () => {
 
         {/* Hero Image */}
         <div>
-          <div className="w-[250px] h-[250px] mx-auto md:h-[300px] md:w-[300px] rounded-full border-4 border-aqua-color">
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="3000"
+            className="w-[250px] h-[250px] mx-auto md:h-[300px] md:w-[300px] rounded-full border-4 border-aqua-color"
+          >
             <img
               src="src/assets/img/mushkir-image.JPG"
               alt="Mushkir Image / Mohamed Mushkir Image"

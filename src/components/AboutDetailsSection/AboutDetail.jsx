@@ -1,11 +1,21 @@
+import React from "react";
 import { Link } from "react-router-dom";
+import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
+// import TextGenerateEffectDemo from "./AboutDetailsSection/AboutDetail";
 
 const AboutDetail = () => {
   return (
     <div className="px-5 md:px-20 py-20 bg-secondary-font-color" id="about">
-      <h4 className="text-center md:text-left text-3xl font-semibold text-primary-blue mb-5">
-        About
-      </h4>
+      {/* About Heading */}
+      <TypewriterEffectSmooth
+        words={[
+          {
+            text: "About",
+            className:
+              "text-center md:text-left text-3xl font-semibold text-primary-blue mb-5",
+          },
+        ]}
+      />
 
       <div>
         <p className=" text-justify text-sm sm:text-lg text-[#222f44]">

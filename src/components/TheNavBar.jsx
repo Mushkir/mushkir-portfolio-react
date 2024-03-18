@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const TheNavBar = () => {
@@ -8,13 +8,13 @@ const TheNavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="relative z-10">
+    <div className="relative z-10" data-aos="fade-up" data-aos-duration="2000">
       <nav className="bg-primary-blue px-5 sm:px-20 py-10 fixed top-0 left-0 right-0">
         <div className="flex items-center justify-between">
           <div className="flex items-center flex-col">
             <NavLink
               to={"/"}
-              className="flex-1 text-main-heading-color text-xl sm:text-3xl font-semibold"
+              className="flex-1 text-main-heading-color text-2xl sm:text-3xl font-semibold"
             >
               MM
             </NavLink>
