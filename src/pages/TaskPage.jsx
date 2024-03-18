@@ -5,6 +5,8 @@ import TheHeaderProgressBar from "../components/HeaderProgressBar/TheHeaderProgr
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
 const TaskPage = () => {
+  console.log(taskList);
+
   return (
     <div className="bg-secondary-font-color min-h-screen font-Sen">
       <TheHeaderProgressBar />
@@ -28,6 +30,7 @@ const TaskPage = () => {
               techStacks,
               type,
               description,
+              projectType,
             }) => {
               // { id, title, github, imgLink, live, techStacks, type }
               // console.log(el);
@@ -41,6 +44,7 @@ const TaskPage = () => {
                   githubUrl={github}
                   techStacks={techStacks}
                   type={type}
+                  projectType={projectType}
                 />
               );
             }

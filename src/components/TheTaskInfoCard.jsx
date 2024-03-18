@@ -9,6 +9,7 @@ const TheTaskInfoCard = ({
   techStacks,
   title,
   type,
+  projectType,
 }) => {
   return (
     <div
@@ -27,7 +28,7 @@ const TheTaskInfoCard = ({
       <div className="p-6">
         {/* Heading */}
         <div className="flex items-center justify-between mb-3">
-          <h5 className="block font-Sen text-xl antialiased font-bold leading-snug tracking-normal text-primary-blue">
+          <h5 className="block font-Sen text-xl antialiased font-extrabold leading-snug tracking-normal text-primary-blue">
             {title}
           </h5>
         </div>
@@ -44,13 +45,23 @@ const TheTaskInfoCard = ({
               Category:{" "}
               <span className="text-[#3a4659]">
                 {type == "F"
-                  ? "Frontend"
+                  ? "Frontend."
                   : type == "B"
-                  ? "Backend"
+                  ? "Backend."
                   : type == "F&B"
-                  ? "Frontend and Backend"
+                  ? "Frontend and Backend."
                   : "Sorry! Invalid Criteria."}
               </span>
+            </strong>
+          </div>
+          <div className="mb-2 text-primary-blue">
+            <strong>
+              Project Purpose:{" "}
+              <span className="text-[#3a4659]">
+                {projectType == "cdn"
+                  ? "For 06 months Internship at CyberDude Networks."
+                  : "For Academic."}
+              </span>{" "}
             </strong>
           </div>
           <div>
@@ -147,6 +158,7 @@ TheTaskInfoCard.propTypes = {
   techStacks: PropTypes.array,
   title: PropTypes.string,
   type: PropTypes.string,
+  projectType: PropTypes.string,
 };
 
 export default TheTaskInfoCard;

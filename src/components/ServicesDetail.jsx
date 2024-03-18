@@ -12,11 +12,7 @@ const ServicesInfo = () => {
       </h4>
 
       {/* Services */}
-      <div
-        className="sm:flex justify-center sm:gap-5 items-center"
-        data-aos="flip-up"
-        data-aos-duration="2000"
-      >
+      <div className="sm:flex justify-center sm:gap-5 items-center">
         {/* Front-end Development */}
         <Card
           heading="Frontend Development"
