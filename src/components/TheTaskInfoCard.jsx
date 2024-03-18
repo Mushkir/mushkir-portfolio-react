@@ -11,7 +11,11 @@ const TheTaskInfoCard = ({
   type,
 }) => {
   return (
-    <div className="z-0 relative w-full md:max-w-[350px]  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+    <div
+      className="z-0 relative w-full md:max-w-[350px] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg"
+      data-aos="zoom-out-up"
+      data-aos-duration="1000"
+    >
       <div className="z-0 relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
         <img
           src={imgUrl}
