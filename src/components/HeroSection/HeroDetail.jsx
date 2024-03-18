@@ -55,7 +55,6 @@ const HeroDetail = () => {
           {/* Download Button */}
           <Link
             data-aos="fade-right"
-            data-aos-duration="3000"
             to={"src/assets/docs/Mushkir.pdf"}
             target="_blank"
             download

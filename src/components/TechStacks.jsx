@@ -17,11 +17,19 @@ const TechStacks = () => {
       className=" bg-primary-blue text-aqua-color px-5 md:px-20 py-20"
       id="stacks"
     >
-      <h4 className="text-3xl text-center md:text-left font-semibold text-main-heading-color mb-5">
+      <h4
+        className="text-3xl text-center md:text-left font-semibold text-main-heading-color mb-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         Tech Stacks
       </h4>
 
-      <div className="flex flex-wrap justify-center gap-10 items-center mt-5">
+      <div
+        className="flex flex-wrap justify-center gap-10 items-center mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         {/* HTML5 */}
         <HTMLIcon />
 

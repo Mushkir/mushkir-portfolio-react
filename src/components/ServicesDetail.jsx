@@ -3,12 +3,20 @@ import Card from "./Card";
 const ServicesInfo = () => {
   return (
     <div className="px-5 md:px-20 py-20 bg-secondary-font-color" id="services">
-      <h4 className="text-3xl text-center md:text-left font-semibold text-primary-blue mb-5">
+      <h4
+        className="text-3xl text-center md:text-left font-semibold text-primary-blue mb-5"
+        data-aos="flip-up"
+        data-aos-duration="2000"
+      >
         Services
       </h4>
 
       {/* Services */}
-      <div className="sm:flex justify-center sm:gap-5 items-center">
+      <div
+        className="sm:flex justify-center sm:gap-5 items-center"
+        data-aos="flip-up"
+        data-aos-duration="2000"
+      >
         {/* Front-end Development */}
         <Card
           heading="Frontend Development"

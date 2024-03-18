@@ -1,5 +1,5 @@
 import { cn } from "../../utils/cn";
-import { color, motion, stagger, useAnimate, useInView } from "framer-motion";
+import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
 
 export const TypewriterEffect = ({

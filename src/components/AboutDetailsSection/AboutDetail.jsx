@@ -1,24 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
+
 // import TextGenerateEffectDemo from "./AboutDetailsSection/AboutDetail";
 
 const AboutDetail = () => {
   return (
     <div className="px-5 md:px-20 py-20 bg-secondary-font-color" id="about">
       {/* About Heading */}
-      <TypewriterEffectSmooth
-        words={[
-          {
-            text: "About",
-            className:
-              "text-center md:text-left text-3xl font-semibold text-primary-blue mb-5",
-          },
-        ]}
-      />
+      <h4
+        className="text-3xl text-center md:text-left font-semibold text-primary-blue mb-5"
+        data-aos="flip-up"
+        data-aos-duration="1000"
+      >
+        About
+      </h4>
 
       <div>
-        <p className=" text-justify text-sm sm:text-lg text-[#222f44]">
+        <p
+          className=" text-justify text-sm sm:text-lg text-[#222f44]"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+        >
           A Dedicated and Creative Web Designer and Developer with 06 months of
           Experience in Conceptualing, Designing, and Implementing visually
           applealing and User-friendly websites. Proficient in{" "}

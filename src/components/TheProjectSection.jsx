@@ -14,7 +14,11 @@ const TheProjectSection = () => {
 
   return (
     <div className=" bg-primary-blue px-5 md:px-20 py-20" id="works">
-      <h4 className="text-3xl text-center md:text-left font-semibold text-main-heading-color mb-10">
+      <h4
+        className="text-3xl text-center md:text-left font-semibold text-main-heading-color mb-10"
+        data-aos="fade-right"
+        data-aos-duration="2500"
+      >
         Explore My Works
       </h4>
 
@@ -56,6 +60,8 @@ const TheProjectSection = () => {
       <button
         className=" border border-aqua-color text-aqua-color px-5 py-2 rounded-md flex items-center gap-2 mx-auto mt-10 hover:bg-aqua-color hover:text-primary-blue hover:transition 500 hover:font-semibold"
         onClick={navigateTaskPage}
+        data-aos="fade-right"
+        data-aos-duration="2500"
       >
         <div>
           <svg

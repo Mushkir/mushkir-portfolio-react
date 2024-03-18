@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 
 const TaskCard = ({ imgSource, title, liveUrl, githubUrl }) => {
   return (
-    <div className="w-full sm:w-[400px] h-[480px] sm:h-[438px] border rounded-md shado mb-5 bg-[#222f44] border-gray-700">
+    <div
+      className="w-full sm:w-[400px] h-[480px] sm:h-[438px] border rounded-md shado mb-5 bg-[#222f44] border-gray-700"
+      data-aos="fade-right"
+      data-aos-duration="2500"
+    >
       <div className="w-full h-64">
         <img
           className="rounded-t-lg w-full h-full object-cover"

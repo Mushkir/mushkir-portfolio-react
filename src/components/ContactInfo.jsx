@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 
 const ContactInfo = () => {
   return (
-    <div className="space-y-5 w-full">
+    <div
+      className="space-y-5 w-full"
+      data-aos="zoom-in-down"
+      data-aos-duration="2000"
+    >
       {/* Email */}
       <div className="flex flex-col sm:flex-row items-center sm:space-x-10 text-lg">
         <strong className="text-main-heading-color">Email Address :</strong>
