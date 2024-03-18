@@ -18,7 +18,7 @@ https://mushkir-portfolio-react.vercel.app/
 
 ### Screenshots
 
-[!Screenshot01]('./screenshots/1.png')
+[!Screenshot01]('../../screenshots/1.png')
 
 ## Installation
 

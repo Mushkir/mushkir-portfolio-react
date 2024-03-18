@@ -103,7 +103,7 @@ const TheTaskInfoCard = ({
             <Link
               to={liveUrl}
               target="_blank"
-              className="flex items-center gap-2 justify-center w-full select-none rounded-lg bg-primary-blue hover:bg-[#222f44] py-3.5 pl-3 px-7 text-center align-middle font-Sen text-sm text-white"
+              className="flex items-center gap-2 justify-center w-full select-none rounded-lg bg-primary-blue hover:bg-[#222f44] py-2 pl-3 px-5 text-center align-middle font-Sen text-sm text-white"
               type="button"
             >
               <div>
@@ -125,7 +125,7 @@ const TheTaskInfoCard = ({
             <Link
               to={githubUrl}
               target="_blank"
-              className="flex items-center justify-center gap-2 w-full select-none rounded-lg bg-gray-900 hover:bg-gray-800 py-3.5 pl-3 px-7 text-center align-middle font-Sen text-sm text-white"
+              className="flex items-center justify-center gap-2 w-full select-none rounded-lg bg-gray-900 hover:bg-gray-800 py-2 pl-3 px-5 text-center align-middle font-Sen text-sm text-white"
               type="button"
             >
               <div>

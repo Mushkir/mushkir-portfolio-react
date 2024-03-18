@@ -9,7 +9,9 @@ const TaskPage = () => {
 
   return (
     <div className="bg-secondary-font-color min-h-screen font-Sen">
-      <TheHeaderProgressBar />
+      <div className=" px-3">
+        <TheHeaderProgressBar />
+      </div>
 
       <div className="pt-[190px]">
         <h3 className="text-center text-3xl font-semibold text-primary-blue mb-8 sm:mb-0">
