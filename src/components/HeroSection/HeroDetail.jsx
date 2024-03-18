@@ -120,7 +120,7 @@ const HeroDetail = () => {
             className="w-[250px] h-[250px] mx-auto md:h-[300px] md:w-[300px] rounded-full border-4 border-aqua-color"
           >
             <img
-              src="src/assets/img/mushkir-image.JPG"
+              src={`${`https://github.com/Mushkir`}.png`}
               alt="Mushkir Image / Mohamed Mushkir Image"
               className=" h-full w-full object-cover rounded-full "
             />
