@@ -7,17 +7,15 @@ import { TextGenerateEffect } from "../ui/text-generate-effect";
 const HeroDetail = () => {
   // * Function for Downloading Resume
   const onButtonClick = () => {
-    fetch("../../assets/docs/Mushkir.pdf").then((response) => {
-      response.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        const anchorTagEl = document.createElement("a");
-        anchorTagEl.href = fileURL;
-        anchorTagEl.download = "Mushkir.pdf";
-        anchorTagEl.click();
+    const pdfURL = "../../../src/assets/docs/Mushkir.pdf";
+    const anchorTagEl = document.createElement("a");
+    anchorTagEl.href = pdfURL;
+    anchorTagEl.download = "resume.pdf";
+    document.body.appendChild(anchorTagEl);
+    anchorTagEl.click();
+    document.body.removeChild(anchorTagEl);
 
-        console.log(fileURL);
-      });
-    });
+    console.log(pdfURL);
   };
 
   return (
