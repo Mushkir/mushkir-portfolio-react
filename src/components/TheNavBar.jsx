@@ -1,8 +1,15 @@
 // import { Link } from "react-router-dom";
+import { Button } from "flowbite-react";
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const TheNavBar = () => {
+  // const showAlert = () => {
+  //   alert(
+  //     "Dear viewer! This part currently is in under work in progress. It will be completed as soon as possible."
+  //   );
+  // };
+
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -81,14 +88,15 @@ const TheNavBar = () => {
                 Contact
               </a>
             </li>
-            <li>
-              <Link
-                to={"/hi"}
+            {/* <li>
+              <button
+                // to={"/hi"}
+                onClick={showAlert}
                 className=" text-aqua-color border border-aqua-color px-5 py-2 rounded-md hover:bg-aqua-color hover:transition 500 hover:text-primary-blue sm:hover:font-semibold"
               >
                 Resume
-              </Link>
-            </li>
+              </button>
+            </li> */}
           </ul>
 
           <div className="xl:hidden">
