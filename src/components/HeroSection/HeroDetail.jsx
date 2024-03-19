@@ -55,8 +55,7 @@ const HeroDetail = () => {
           {/* Download Button */}
           <a
             data-aos="fade-right"
-            href="src/assets/docs/Mushkir.pdf"
-            target="_blank"
+            href="./src/assets/docs/Mushkir.pdf"
             download
             className="w-full flex justify-center sm:justify-normal rounded-full sm:rounded-md items-center mt-5 text-aqua-color gap-2 sm:w-[220px] border-2 border-aqua-color px-5 py-2 hover:bg-aqua-color hover:text-primary-blue hover:font-semibold hover:transition 500"
           >
