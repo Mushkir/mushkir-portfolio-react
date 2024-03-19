@@ -16,7 +16,7 @@ const TheNavBar = () => {
               to={"/"}
               className="flex-1 text-main-heading-color text-2xl sm:text-3xl font-semibold"
             >
-              MM
+              Mushkir
             </NavLink>
           </div>
 
