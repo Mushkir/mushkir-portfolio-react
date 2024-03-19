@@ -2,8 +2,8 @@
 import SocialLinks from "../SocialLinks";
 import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-import resumePDF from "../../assets/docs/Mushkir.pdf";
-import { Link } from "react-router-dom";
+// import resumePDF from "../../assets/docs/Mushkir.pdf";
+// import { Link } from "react-router-dom";
 
 const HeroDetail = () => {
   return (
@@ -55,11 +55,12 @@ const HeroDetail = () => {
           <SocialLinks />
 
           {/* Download Button */}
-          <Link
+          <a
             data-aos="fade-right"
-            to={resumePDF}
+            href="../../../public/Mushkir.pdf"
             target="_blank"
             download="mohamed_mushkir.pdf"
+            rel="noopener noreferrer"
             className="w-full flex justify-center sm:justify-normal rounded-full sm:rounded-md items-center mt-5 text-aqua-color gap-2 sm:w-[220px] border-2 border-aqua-color px-5 py-2 hover:bg-aqua-color hover:text-primary-blue hover:font-semibold hover:transition 500"
           >
             <div>
@@ -111,7 +112,7 @@ const HeroDetail = () => {
               </svg>
             </div>
             Download Resume
-          </Link>
+          </a>
         </div>
 
         {/* Hero Image */}
