@@ -2,7 +2,7 @@
 import SocialLinks from "../SocialLinks";
 import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-// import resumePDF from "../../assets/docs/Mushkir.pdf";
+import resumePDF from "../../../public/Mushkir.pdf";
 // import { Link } from "react-router-dom";
 
 const HeroDetail = () => {
@@ -57,7 +57,7 @@ const HeroDetail = () => {
           {/* Download Button */}
           <a
             data-aos="fade-right"
-            href="../../../public/Mushkir.pdf"
+            href={resumePDF}
             target="_blank"
             download="mohamed_mushkir.pdf"
             rel="noopener noreferrer"
