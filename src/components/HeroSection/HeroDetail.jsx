@@ -7,7 +7,7 @@ import { TextGenerateEffect } from "../ui/text-generate-effect";
 const HeroDetail = () => {
   // * Function for Downloading Resume
   const onButtonClick = () => {
-    fetch("src/assets/docs/Mushkir.pdf").then((response) => {
+    fetch("../../assets/docs/Mushkir.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         const anchorTagEl = document.createElement("a");
