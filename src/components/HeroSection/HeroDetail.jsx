@@ -2,12 +2,24 @@
 import SocialLinks from "../SocialLinks";
 import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-import { saveAs } from "file-saver";
+// import { saveAs } from "file-saver";
 import resumePDF from "../../assets/docs/Mushkir.pdf";
 
 const HeroDetail = () => {
   const saveFile = () => {
-    saveAs(resumePDF, "last attempt.pdf");
+    // saveAs(resumePDF, "last attempt.pdf");
+    // Create a hidden anchor element
+    const link = document.createElement("a");
+    link.href = resumePDF;
+    link.target = "_blank"; // Open in a new tab on mobile devices
+    link.download = "last_attempt.pdf"; // Set the filename
+    document.body.appendChild(link);
+
+    // Trigger a click event on the anchor element
+    link.click();
+
+    // Clean up
+    document.body.removeChild(link);
   };
   return (
     <div className="bg-primary-blue px-5 md:px-20 pt-28 pb-28">
