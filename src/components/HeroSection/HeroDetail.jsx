@@ -2,8 +2,24 @@ import { Link } from "react-router-dom";
 import SocialLinks from "../SocialLinks";
 import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
+// import { PDFViewer } from "@react-pdf/renderer";
 
 const HeroDetail = () => {
+  // * Function for Downloading Resume
+  const onButtonClick = () => {
+    fetch("src/assets/docs/Mushkir.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        const anchorTagEl = document.createElement("a");
+        anchorTagEl.href = fileURL;
+        anchorTagEl.download = "Mushkir.pdf";
+        anchorTagEl.click();
+
+        console.log(fileURL);
+      });
+    });
+  };
+
   return (
     <div className="bg-primary-blue px-5 md:px-20 pt-28 pb-28">
       <div className="md:flex gap-20 justify-between mt-12 md:mt-28">
@@ -53,10 +69,9 @@ const HeroDetail = () => {
           <SocialLinks />
 
           {/* Download Button */}
-          <a
+          <button
             data-aos="fade-right"
-            href="./src/assets/docs/Mushkir.pdf"
-            download
+            onClick={onButtonClick}
             className="w-full flex justify-center sm:justify-normal rounded-full sm:rounded-md items-center mt-5 text-aqua-color gap-2 sm:w-[220px] border-2 border-aqua-color px-5 py-2 hover:bg-aqua-color hover:text-primary-blue hover:font-semibold hover:transition 500"
           >
             <div>
@@ -108,7 +123,7 @@ const HeroDetail = () => {
               </svg>
             </div>
             Download Resume
-          </a>
+          </button>
         </div>
 
         {/* Hero Image */}
