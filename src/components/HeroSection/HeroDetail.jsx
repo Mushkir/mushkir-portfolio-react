@@ -2,25 +2,9 @@
 import SocialLinks from "../SocialLinks";
 import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-// import { saveAs } from "file-saver";
 import resumePDF from "../../assets/docs/Mushkir.pdf";
 
 const HeroDetail = () => {
-  const saveFile = () => {
-    // saveAs(resumePDF, "last attempt.pdf");
-    // Create a hidden anchor element
-    const link = document.createElement("a");
-    link.href = resumePDF;
-    link.target = "_blank"; // Open in a new tab on mobile devices
-    link.download = "last_attempt.pdf"; // Set the filename
-    document.body.appendChild(link);
-
-    // Trigger a click event on the anchor element
-    link.click();
-
-    // Clean up
-    document.body.removeChild(link);
-  };
   return (
     <div className="bg-primary-blue px-5 md:px-20 pt-28 pb-28">
       <div className="md:flex gap-20 justify-between mt-12 md:mt-28">
@@ -70,13 +54,12 @@ const HeroDetail = () => {
           <SocialLinks />
 
           {/* Download Button */}
-          <button
+          <a
             data-aos="fade-right"
-            onClick={saveFile}
-            // href={resumePDF}
-            // target="_blank"
-            // download="mohamed_mushkir.pdf"
-            // rel="noreferrer"
+            href={resumePDF}
+            target="_blank"
+            download="mohamed_mushkir.pdf"
+            rel="noreferrer"
             className="w-full flex justify-center sm:justify-normal rounded-full sm:rounded-md items-center mt-5 text-aqua-color gap-2 sm:w-[220px] border-2 border-aqua-color px-5 py-2 hover:bg-aqua-color hover:text-primary-blue hover:font-semibold hover:transition 500"
           >
             <div>
@@ -128,7 +111,7 @@ const HeroDetail = () => {
               </svg>
             </div>
             Download Resume
-          </button>
+          </a>
         </div>
 
         {/* Hero Image */}
