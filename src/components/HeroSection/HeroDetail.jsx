@@ -2,7 +2,7 @@
 import SocialLinks from "../SocialLinks";
 import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-import resumePDF from "../../../public/Mushkir.pdf";
+import resumePDF from "../../assets/docs/Mushkir.pdf";
 // import { Link } from "react-router-dom";
 
 const HeroDetail = () => {
