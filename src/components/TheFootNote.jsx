@@ -5,7 +5,7 @@ const TheFootNote = () => {
     <div className=" bg-primary-blue p-4 text-center">
       <div>
         <span className="text-lg text-main-heading-color ">
-          Copyright© - 2024 | Designed and Developed by:{" "}
+          Copyright© - {new Date().getFullYear()} | Designed and Developed by:{" "}
           <Link
             to={"https://github.com/Mushkir/mushkir-portfolio-react"}
             target="_blank"

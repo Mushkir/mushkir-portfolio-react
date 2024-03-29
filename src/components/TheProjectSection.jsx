@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import taskList from "../data/taskList.json";
 
 const TheProjectSection = () => {
-  console.log(taskList[0].tasks[24]);
+  // console.log(taskList[0].tasks[24]);
 
   const navigate = useNavigate();
 
