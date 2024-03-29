@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import taskList from "../data/taskList.json";
 
 const TheProjectSection = () => {
-  // console.log(taskList[0].tasks);
+  console.log(taskList[0].tasks[24]);
 
   const navigate = useNavigate();
 
@@ -26,10 +26,11 @@ const TheProjectSection = () => {
       <div className="sm:flex items-center justify-center sm:gap-16 flex-wrap">
         {/* Instagram clone */}
         <TaskCard
-          imgSource={taskList[0].tasks[5].imgLink}
-          title={taskList[0].tasks[5].title}
-          liveUrl={taskList[0].tasks[5].live}
-          githubUrl={taskList[0].tasks[5].github}
+          imgSource={taskList[0].tasks[24].imgLink}
+          title={taskList[0].tasks[24].title}
+          liveUrl={taskList[0].tasks[24].live}
+          githubUrl={taskList[0].tasks[24].github}
+          techStacks={taskList[0].tasks[24].techStacks}
         />
 
         {/* JS DOM Landing page idea */}
@@ -38,6 +39,7 @@ const TheProjectSection = () => {
           title={taskList[0].tasks[7].title}
           liveUrl={taskList[0].tasks[7].live}
           githubUrl={taskList[0].tasks[7].github}
+          techStacks={taskList[0].tasks[7].techStacks}
         />
 
         {/*  Interns Profile */}
@@ -46,6 +48,7 @@ const TheProjectSection = () => {
           title={taskList[0].tasks[10].title}
           liveUrl={taskList[0].tasks[10].live}
           githubUrl={taskList[0].tasks[10].github}
+          techStacks={taskList[0].tasks[10].techStacks}
         />
 
         {/* Post Finder - React App */}
@@ -54,6 +57,7 @@ const TheProjectSection = () => {
           title={taskList[0].tasks[17].title}
           liveUrl={taskList[0].tasks[17].live}
           githubUrl={taskList[0].tasks[17].github}
+          techStacks={taskList[0].tasks[17].techStacks}
         />
       </div>
 

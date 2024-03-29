@@ -66,52 +66,17 @@ const HeroDetail = () => {
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="1em"
+                width="1.13em"
                 height="1em"
-                viewBox="0 0 24 24"
+                viewBox="0 0 576 512"
               >
-                <mask id="lineMdCloudDownloadLoop0">
-                  <g fill="#fff">
-                    <circle cx="12" cy="10" r="6"></circle>
-                    <rect width="9" height="7" x="8" y="13"></rect>
-                    <rect width="15" height="12" x="1" y="8" rx="6">
-                      <animate
-                        attributeName="x"
-                        dur="15s"
-                        repeatCount="indefinite"
-                        values="1;0;1;2;1"
-                      ></animate>
-                    </rect>
-                    <rect width="13" height="10" x="10" y="10" rx="5">
-                      <animate
-                        attributeName="x"
-                        dur="19s"
-                        repeatCount="indefinite"
-                        values="10;9;10;11;10"
-                      ></animate>
-                    </rect>
-                  </g>
-                  <rect width="4" height="5" x="10" y="9"></rect>
-                  <path d="M12 18L17 13H7L12 18Z">
-                    <animateMotion
-                      calcMode="linear"
-                      dur="1.5s"
-                      keyPoints="0;0.25;0.5;0.75;1"
-                      keyTimes="0;0.1;0.5;0.8;1"
-                      path="M0 0v1v-2z"
-                      repeatCount="indefinite"
-                    ></animateMotion>
-                  </path>
-                </mask>
-                <rect
-                  width="24"
-                  height="24"
+                <path
                   fill="currentColor"
-                  mask="url(#lineMdCloudDownloadLoop0)"
-                ></rect>
+                  d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32M144 256a144 144 0 1 1 288 0a144 144 0 1 1-288 0m144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3"
+                ></path>
               </svg>
             </div>
-            Download Resume
+            Explore Resume
           </a>
         </div>
 
