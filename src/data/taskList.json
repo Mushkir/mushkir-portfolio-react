@@ -44,7 +44,7 @@
         "imgLink": "https://i.ibb.co/tb2jnVj/screencapture-mushkir-github-io-movie-cafe-UI-with-bootsrap-2024-03-14-17-44-50.png",
         "type": "F",
         "projectType": "cdn",
-        "description": "It is a responsive UI project designed to enhance the knowledge of the Bootstrap framework. With a combination of HTML, CSS, Bootstrap, and SCSS, this project replicates a modern and user-friendly web interface for a fictional 'Movie Cafe.' The goal of this project is to get a deeper understanding of Bootstrap components and customizations."
+        "description": "It is a responsive UI project designed to enhance the knowledge of the Bootstrap framework. With a combination of HTML, CSS, Bootstrap, and SCSS, this project replicates a modern and user-friendly web interface for a fictional \"Movie Cafe.\" The goal of this project is to get a deeper understanding of Bootstrap components and customizations."
       },
       {
         "id": 5,
@@ -55,7 +55,7 @@
         "imgLink": "https://i.ibb.co/MPrh4Zt/screencapture-mushkir-github-io-Whats-App-i-OS-UI-Sample-2024-03-15-01-34-45.png",
         "type": "F",
         "projectType": "cdn",
-        "description": "This project is a clone of the WhatsApp iOS application's user interface, developed using HTML and Tailwind CSS. The goal of this project is to enhance the skills in UI/UX to understand about basics of 'TailwindCSS' and to identify the difference between Bootstrap and TailwindCSS."
+        "description": "This project is a clone of the WhatsApp iOS application's user interface, developed using HTML and Tailwind CSS. The goal of this project is to enhance the skills in UI/UX to understand about basics of \"TailwindCSS\" and to identify the difference between Bootstrap and TailwindCSS."
       },
       {
         "id": 6,
@@ -198,7 +198,7 @@
         "imgLink": "https://i.ibb.co/fFH2sJP/screencapture-post-finder-react-app-netlify-app-2024-03-14-22-16-13.png",
         "type": "F",
         "projectType": "cdn",
-        "description": "This task was given to get an understanding of React States such as 'useState', and 'useEffect' and how to fetch the data from API with the help of 'useEffect'."
+        "description": "This task was given to get an understanding of React States such as \"useState\", and \"useEffect\" and how to fetch the data from API with the help of \"useEffect\"."
       },
       {
         "id": 19,
@@ -209,7 +209,7 @@
         "imgLink": "https://i.ibb.co/nQPKvXt/screencapture-react-components-app-task-netlify-app-2024-03-15-02-26-38.png",
         "type": "F",
         "projectType": "cdn",
-        "description": "This task was given to get an understanding of Components which is one of the important concepts in React. Through this task, got the basic idea of creating reusable components in React and the concept of 'Props' such as passing and validating 'Props'."
+        "description": "This task was given to get an understanding of Components which is one of the important concepts in React. Through this task, got the basic idea of creating reusable components in React and the concept of \"Props\" such as passing and validating \"Props\"."
       },
       {
         "id": 20,
@@ -220,7 +220,7 @@
         "imgLink": "https://i.ibb.co/yX2krwk/screencapture-react-form-validation-react-hook-form-netlify-app-2024-03-15-02-30-09.png",
         "type": "F",
         "projectType": "cdn",
-        "description": "The task provided me with an opportunity to understand Form Validation, a crucial concept in React. Through this task, I acquired a basic grasp of implementing form validation using 'React-Hook-Form.'"
+        "description": "The task provided me with an opportunity to understand Form Validation, a crucial concept in React. Through this task, I acquired a basic grasp of implementing form validation using \"React-Hook-Form.\""
       },
       {
         "id": 21,
@@ -231,7 +231,7 @@
         "imgLink": "https://www.loginradius.com/blog/static/6ee159acf6c294342ec04f86aede5d14/701ee/coverImage.jpg",
         "type": "B",
         "projectType": "cdn",
-        "description": "Node.js is one of the elements in the MERN stack. Through this task, the understanding of 'FS (File System)' in Node.js was achieved."
+        "description": "Node.js is one of the elements in the MERN stack. Through this task, the understanding of \"FS (File System)\" in Node.js was achieved."
       },
       {
         "id": 22,
@@ -282,7 +282,7 @@
         "imgLink": "https://i.ibb.co/zRCp8YY/Screenshot-2024-03-17-at-07-15-50-2.png",
         "type": "F&B",
         "projectType": "ac",
-        "description": "As Software Engineering undergraduates, we have been assigned an assessment from our campus, which involves creating a web-based application for a taxi service. The project is named 'City Taxi' and aims to provide services through a web-based application. You can explore the GitHub repository to get further details and view the demo video of this project by clicking the GitHub button."
+        "description": "As Software Engineering undergraduates, we have been assigned an assessment from our campus, which involves creating a web-based application for a taxi service. The project is named \"City Taxi\" and aims to provide services through a web-based application. You can explore the GitHub repository to get further details and view the demo video of this project by clicking the GitHub button."
       }
     ]
   }
