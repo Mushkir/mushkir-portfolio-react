@@ -177,14 +177,14 @@ const TheNavBar = () => {
                 Contact
               </a>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to={"/hi"}
                 className=" text-aqua-color border border-aqua-color px-5 py-2 rounded-md hover:bg-aqua-color hover:transition 500 hover:text-primary-blue sm:hover:font-semibold"
               >
                 Resume
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

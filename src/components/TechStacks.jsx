@@ -10,6 +10,7 @@ import NodeJsIcon from "./Icons/NodeJsIcon";
 import FirebaseIcon from "./Icons/FirebaseIcon";
 import PHPIcon from "./Icons/PHPIcon";
 import MySQLIcon from "./Icons/MySQLIcon";
+import JQueryIcon from "./Icons/JQueryIcon";
 
 const TechStacks = () => {
   return (
@@ -63,8 +64,13 @@ const TechStacks = () => {
         {/* PHP */}
         <PHPIcon />
 
+        {/* JQuery */}
+        <JQueryIcon />
+
         {/* MySQL */}
         <MySQLIcon />
+
+        {/* Icon url: https://icon-sets.iconify.design/?query=jquery */}
       </div>
     </div>
   );
