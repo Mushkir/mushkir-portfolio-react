@@ -30,17 +30,14 @@ const TheProjectSection = () => {
       })
       .then((result) => {
         if (result.isConfirmed) {
-          const path = "/academic-tasks";
+          const path = "/tasks";
           navigate(path);
         } else if (
           /* Read more about handling dismissals below */
           result.dismiss === Swal.DismissReason.cancel
         ) {
-          swalWithBootstrapButtons.fire({
-            title: "Cancelled",
-            text: "Your imaginary file is safe :)",
-            icon: "error",
-          });
+          const academicProjectPath = "/academic-projects";
+          navigate(academicProjectPath);
         }
       });
 
