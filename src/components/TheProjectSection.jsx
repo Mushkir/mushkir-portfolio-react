@@ -14,8 +14,10 @@ const TheProjectSection = () => {
 
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
-        confirmButton: "px-5 py-2 bg-primary-blue text-white rounded-md mx-3",
-        cancelButton: "px-5 py-2 bg-green-700 text-white rounded-md mx-3",
+        confirmButton:
+          "px-5 py-2 bg-primary-blue text-white rounded-md mx-3 mb-3 sm:mb-0 w-full sm:w-[200px]",
+        cancelButton:
+          "px-5 py-2 bg-green-700 text-white rounded-md mx-3 mb-3 sm:mb-0 w-full sm:w-[200px]",
       },
       buttonsStyling: false,
     });
