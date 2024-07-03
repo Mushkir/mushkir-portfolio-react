@@ -265,9 +265,31 @@
         "type": "F&B",
         "projectType": "cdn",
         "description": "This application was developed during the Hackathon event organized by CyberDude Networks (Pvt) Ltd virtually. The application had to be built from scratch within 12 hours continuously. Through this application, users can perform CRUD operations. Additionally, form validation using React-Hook-Form and responsive design were considered."
+      }
+    ],
+
+    "academic": [
+      {
+        "id": 1,
+        "title": "Skill-Wave Service Hiring Web Application",
+        "live": "",
+        "techStacks": [
+          "HTML | ",
+          "TailwindCSS | ",
+          "CSS | ",
+          "JavaScript | ",
+          "JQuery - AJAX | ",
+          "PHP-PDO | ",
+          "MySQL"
+        ],
+        "github": "https://github.com/Mushkir/skill-wave-service-hiring-app",
+        "imgLink": "https://i.ibb.co/H4vtvtz/1.png",
+        "type": "F&B",
+        "projectType": "ac",
+        "description": "As a Software Engineering undergraduate, this project was done as a final year project, which involved creating a web-based application for a service hiring. The project is named \"Skill-Wave\" and aims to link service seekers with respective service providers through a web-based application. You can explore the GitHub repository to get further details of this project by clicking the GitHub button."
       },
       {
-        "id": 25,
+        "id": 2,
         "title": "City-Taxi",
         "live": "",
         "techStacks": [
@@ -283,6 +305,25 @@
         "type": "F&B",
         "projectType": "ac",
         "description": "As Software Engineering undergraduates, we have been assigned an assessment from our campus, which involves creating a web-based application for a taxi service. The project is named \"City Taxi\" and aims to provide services through a web-based application. You can explore the GitHub repository to get further details and view the demo video of this project by clicking the GitHub button."
+      },
+      {
+        "id": 3,
+        "title": "E-Book",
+        "live": "",
+        "techStacks": [
+          "HTML | ",
+          "Bootstrap | ",
+          "CSS | ",
+          "JavaScript | ",
+          "JQuery - AJAX | ",
+          "ASP.NET - MVC | ",
+          "MSSQL"
+        ],
+        "github": "https://github.com/Mushkir/city-taxi-service",
+        "imgLink": "https://i.ibb.co/RBwT7vP/Screen-Shot-2024-07-03-at-15-54-35-2.png",
+        "type": "F&B",
+        "projectType": "ac",
+        "description": "As Software Engineering undergraduates, we have been assigned an assessment from our campus, which involves creating a web-based application for a Bookselling organization. The project is named \"E-Book\" and aims to provide services through a web-based application. You can explore the GitHub repository to get further details of this project by clicking the GitHub button."
       }
     ]
   }

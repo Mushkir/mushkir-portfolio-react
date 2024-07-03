@@ -1,10 +1,11 @@
 import TaskCard from "./TaskCard";
 import { useNavigate } from "react-router-dom";
-import taskList from "../data/taskList.json";
+import jsonData from "../data/taskList.json";
 import Swal from "sweetalert2";
 
 const TheProjectSection = () => {
-  // console.log(taskList[0].tasks[24]);
+  const { tasks, academic } = jsonData[0];
+  console.log(tasks);
 
   const navigate = useNavigate();
 
@@ -40,9 +41,6 @@ const TheProjectSection = () => {
           navigate(academicProjectPath);
         }
       });
-
-    // const path = "/tasks";
-    // navigate(path);
   };
 
   return (
@@ -57,40 +55,40 @@ const TheProjectSection = () => {
 
       {/* Card */}
       <div className="sm:flex items-center justify-center sm:gap-16 flex-wrap">
-        {/* Instagram clone */}
+        {/* Skill-wave */}
         <TaskCard
-          imgSource={taskList[0].tasks[24].imgLink}
-          title={taskList[0].tasks[24].title}
-          liveUrl={taskList[0].tasks[24].live}
-          githubUrl={taskList[0].tasks[24].github}
-          techStacks={taskList[0].tasks[24].techStacks}
+          imgSource={academic[0].imgLink}
+          title={academic[0].title}
+          liveUrl={""}
+          githubUrl={academic[0].github}
+          techStacks={academic[0].techStacks}
         />
 
-        {/* JS DOM Landing page idea */}
+        {/* City taxi */}
         <TaskCard
-          imgSource={taskList[0].tasks[7].imgLink}
-          title={taskList[0].tasks[7].title}
-          liveUrl={taskList[0].tasks[7].live}
-          githubUrl={taskList[0].tasks[7].github}
-          techStacks={taskList[0].tasks[7].techStacks}
+          imgSource={academic[1].imgLink}
+          title={academic[1].title}
+          liveUrl={academic[1].live}
+          githubUrl={academic[1].github}
+          techStacks={academic[1].techStacks}
         />
 
-        {/*  Interns Profile */}
+        {/*  E-Book */}
         <TaskCard
-          imgSource={taskList[0].tasks[10].imgLink}
-          title={taskList[0].tasks[10].title}
-          liveUrl={taskList[0].tasks[10].live}
-          githubUrl={taskList[0].tasks[10].github}
-          techStacks={taskList[0].tasks[10].techStacks}
+          imgSource={academic[2].imgLink}
+          title={academic[2].title}
+          liveUrl={academic[2].live}
+          githubUrl={academic[2].github}
+          techStacks={academic[2].techStacks}
         />
 
         {/* Post Finder - React App */}
         <TaskCard
-          imgSource={taskList[0].tasks[17].imgLink}
-          title={taskList[0].tasks[17].title}
-          liveUrl={taskList[0].tasks[17].live}
-          githubUrl={taskList[0].tasks[17].github}
-          techStacks={taskList[0].tasks[17].techStacks}
+          imgSource={tasks[17].imgLink}
+          title={tasks[17].title}
+          liveUrl={tasks[17].live}
+          githubUrl={tasks[17].github}
+          techStacks={tasks[17].techStacks}
         />
       </div>
 
