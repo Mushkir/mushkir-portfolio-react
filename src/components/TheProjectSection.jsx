@@ -1,15 +1,51 @@
 import TaskCard from "./TaskCard";
 import { useNavigate } from "react-router-dom";
 import taskList from "../data/taskList.json";
+import Swal from "sweetalert2";
 
 const TheProjectSection = () => {
   // console.log(taskList[0].tasks[24]);
 
   const navigate = useNavigate();
 
-  const navigateTaskPage = () => {
-    const path = "/tasks";
-    navigate(path);
+  const navigateTaskPage = (e) => {
+    e.preventDefault();
+
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: "px-5 py-2 bg-primary-blue text-white rounded-md mx-3",
+        cancelButton: "px-5 py-2 bg-green-700 text-white rounded-md mx-3",
+      },
+      buttonsStyling: false,
+    });
+    swalWithBootstrapButtons
+      .fire({
+        title: "Choose category!",
+        text: "Dear viewer! Please choose category of the projects / tasks to explore!",
+        icon: "info",
+        showCancelButton: true,
+        confirmButtonText: "Internship Tasks",
+        cancelButtonText: "Academic Projects",
+        reverseButtons: true,
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          const path = "/academic-tasks";
+          navigate(path);
+        } else if (
+          /* Read more about handling dismissals below */
+          result.dismiss === Swal.DismissReason.cancel
+        ) {
+          swalWithBootstrapButtons.fire({
+            title: "Cancelled",
+            text: "Your imaginary file is safe :)",
+            icon: "error",
+          });
+        }
+      });
+
+    // const path = "/tasks";
+    // navigate(path);
   };
 
   return (
