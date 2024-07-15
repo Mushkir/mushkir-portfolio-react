@@ -2,8 +2,8 @@
 import SocialLinks from "../SocialLinks";
 import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-import resumePDF from "../../assets/docs/Mushkir.pdf";
-// import { Link } from "react-router-dom";
+// import resumePDF from "../../assets/docs/Mushkir.pdf";
+import resume from "../../assets/docs/mushkir_resume.pdf";
 
 const HeroDetail = () => {
   return (
@@ -57,7 +57,7 @@ const HeroDetail = () => {
           {/* Download Button */}
           <a
             data-aos="fade-right"
-            href={resumePDF}
+            href={resume}
             target="_blank"
             download="mohamed_mushkir.pdf"
             rel="noopener noreferrer"

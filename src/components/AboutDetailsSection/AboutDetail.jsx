@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// import TextGenerateEffectDemo from "./AboutDetailsSection/AboutDetail";
-
 const AboutDetail = () => {
   return (
     <div className="px-5 md:px-20 py-20 bg-secondary-font-color" id="about">
@@ -101,11 +99,18 @@ const AboutDetail = () => {
           </Link>{" "}
           and Other stacks such as{" "}
           <Link
+            to={"https://laravel.com/"}
+            target="_blank"
+            className=" text-primary-blue hover:underline font-semibold"
+          >
+            Laravel
+          </Link>{" "}
+          <Link
             to={"https://www.php.net/manual/en/intro-whatis.php"}
             target="_blank"
             className=" text-primary-blue hover:underline font-semibold"
           >
-            PHP
+            (PHP)
           </Link>
           .
         </p>

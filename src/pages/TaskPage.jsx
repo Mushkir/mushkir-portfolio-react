@@ -5,7 +5,7 @@ import TheHeaderProgressBar from "../components/HeaderProgressBar/TheHeaderProgr
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
 const TaskPage = () => {
-  console.log(taskList);
+  // console.log(taskList);
 
   return (
     <div className="bg-secondary-font-color min-h-screen font-Sen">
