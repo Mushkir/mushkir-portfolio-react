@@ -3,7 +3,7 @@ import SocialLinks from "../SocialLinks";
 import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 // import resumePDF from "../../assets/docs/Mushkir.pdf";
-import resume from "../../assets/docs/mushkir_resume.pdf";
+import resume from "../../assets/docs/Mushkir_Full_Stack_Engineer_CV.pdf";
 
 const HeroDetail = () => {
   return (
