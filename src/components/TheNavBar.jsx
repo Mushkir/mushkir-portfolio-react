@@ -114,6 +114,7 @@ const TheNavBar = () => {
             </button>
           </div>
         </div>
+
         {/* Mobile Menu */}
         <div
           className={` text-main-heading-color xl:hidden mt-4 ${
