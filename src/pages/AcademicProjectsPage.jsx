@@ -70,7 +70,7 @@ const TheAcademicProjectsPage = () => {
             onClick={navigateToTaskPage}
             className="w-full sm:w-[300px] bg-primary-blue px-5 py-2 rounded-md text-white hover:opacity-90 border-2 border-primary-blue transition ease-in-out duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary-blue focus:ring-opacity-50"
           >
-            Navigate to Task Page
+            View Internship Tasks
           </button>
 
           <button
