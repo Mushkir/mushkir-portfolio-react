@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 
 const SocialLinks = () => {
+  const handleContact = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+  };
+
   return (
     <div
       data-aos="fade-right"
@@ -58,6 +63,22 @@ const SocialLinks = () => {
             fill="currentColor"
             d="M176 24H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56m-48 152a48 48 0 1 1 48-48a48.05 48.05 0 0 1-48 48m60-96a12 12 0 1 1 12-12a12 12 0 0 1-12 12m-28 48a32 32 0 1 1-32-32a32 32 0 0 1 32 32"
           ></path>
+        </svg>
+      </Link>
+
+      {/* Call or Message or WhatsApp */}
+      <Link onClick={handleContact} target="_blank">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 32 32"
+          className="hover:text-aqua-color hover:transition 500 md:hover:-translate-y-1"
+        >
+          <path
+            fill="currentColor"
+            d="m29.72 25.84l-7.13-7.13a.97.97 0 0 0-1.18-.14a6.2 6.2 0 0 0-2.7 3.43c-.23.72-1.07 1.05-1.72.66l-.01-.01l-.01-.01a22.2 22.2 0 0 1-7.61-7.61c0-.01-.01-.02-.01-.02c-.4-.65-.07-1.49.65-1.72a6.13 6.13 0 0 0 3.43-2.7c.23-.38.17-.86-.14-1.18L6.16 2.28a.97.97 0 0 0-1.18-.14a6.13 6.13 0 0 0-2.97 5.01v.01c-.01.1-.01.2-.01.3c0 .14.01.27.02.4a23.16 23.16 0 0 0 3.29 11.22c1.87 3.12 4.49 5.74 7.61 7.61l.01.01c3.44 2.07 7.36 3.2 11.37 3.29c.08 0 .16.01.24.01h.56v-.02a6.19 6.19 0 0 0 4.77-2.96c.22-.38.16-.87-.15-1.18"
+          />
         </svg>
       </Link>
     </div>

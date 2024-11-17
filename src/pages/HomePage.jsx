@@ -8,11 +8,7 @@ import TheFootNote from "../components/TheFootNote";
 import TheProjectSection from "../components/TheProjectSection";
 import TheHeaderProgressBar from "../components/HeaderProgressBar/TheHeaderProgressBar";
 
-// import { Tooltip } from "react-tooltip";
-
 const HomePage = () => {
-  // const { scrollYProgress } = useScroll();
-
   return (
     <div>
       {/* Form Frame-Motion Library */}
