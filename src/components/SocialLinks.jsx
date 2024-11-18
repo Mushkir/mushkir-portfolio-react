@@ -60,7 +60,7 @@ const SocialLinks = () => {
 
         {/* Call or Message or WhatsApp */}
         <Link
-          to={"https://wa.me/+94777195282?text=Hello%Mushkir"}
+          to={"https://wa.me/+94777195282?text=Hello%20Mushkir"}
           target="_blank"
         >
           <svg
