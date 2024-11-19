@@ -279,7 +279,7 @@ const TechStacks = () => {
         />
 
         {/* Vue */}
-        {/* <TheStackIcon
+        <TheStackIcon
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -302,7 +302,7 @@ const TechStacks = () => {
             </svg>
           }
           name={"Vue JS"}
-        /> */}
+        />
 
         {/* Node.js */}
         <TheStackIcon
