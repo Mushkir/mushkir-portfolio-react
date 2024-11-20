@@ -99,6 +99,15 @@ const AboutDetail = () => {
           </Link>{" "}
           and Other stacks such as{" "}
           <Link
+            to={"https://vuejs.org/"}
+            target="_blank"
+            className=" text-primary-blue hover:underline font-semibold"
+          >
+            {" "}
+            Vue.js{" "}
+          </Link>{" "}
+          and{" "}
+          <Link
             to={"https://laravel.com/"}
             target="_blank"
             className=" text-primary-blue hover:underline font-semibold"
