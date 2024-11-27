@@ -325,6 +325,25 @@
         "projectType": "ac",
         "description": "As Software Engineering undergraduates, we have been assigned an assessment from our campus, which involves creating a web-based application for a Bookselling organization. The project is named \"E-Book\" and aims to provide services through a web-based application. You can explore the GitHub repository to get further details of this project by clicking the GitHub button."
       }
+    ],
+    "personal": [
+      {
+        "id": 1,
+        "title": "ClickShop Ecommerce Web Application",
+        "live": "",
+        "techStacks": [
+          "MongoDB | ",
+          "Express.js | ",
+          "React.js | ",
+          "Node.js | ",
+          "TailwindCSS"
+        ],
+        "github": "https://github.com/Mushkir/ecommerce-app-mern",
+        "imgLink": "https://i.ibb.co/Dtwsf7r/Screen-Shot-2024-11-27-at-14-00-02.png",
+        "type": "F&B",
+        "projectType": "personal",
+        "description": "WIP"
+      }
     ]
   }
 ]

@@ -4,8 +4,8 @@ import jsonData from "../data/taskList.json";
 import Swal from "sweetalert2";
 
 const TheProjectSection = () => {
-  const { tasks, academic } = jsonData[0];
-  // console.log(tasks);
+  const { tasks, academic, personal } = jsonData[0];
+  console.log(personal);
 
   const navigate = useNavigate();
 
@@ -57,6 +57,15 @@ const TheProjectSection = () => {
 
       {/* Card */}
       <div className="sm:flex items-center justify-center sm:gap-16 flex-wrap">
+        {/* ClickShop */}
+        <TaskCard
+          imgSource={personal[0].imgLink}
+          title={personal[0].title}
+          liveUrl={""}
+          githubUrl={personal[0].github}
+          techStacks={personal[0].techStacks}
+        />
+
         {/* Skill-wave */}
         <TaskCard
           imgSource={academic[0].imgLink}
@@ -82,15 +91,6 @@ const TheProjectSection = () => {
           liveUrl={academic[2].live}
           githubUrl={academic[2].github}
           techStacks={academic[2].techStacks}
-        />
-
-        {/* Post Finder - React App */}
-        <TaskCard
-          imgSource={tasks[17].imgLink}
-          title={tasks[17].title}
-          liveUrl={tasks[17].live}
-          githubUrl={tasks[17].github}
-          techStacks={tasks[17].techStacks}
         />
       </div>
 
