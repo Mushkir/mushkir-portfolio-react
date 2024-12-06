@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const TheProjectSection = () => {
   const { tasks, academic, personal } = jsonData[0];
-  console.log(personal);
+  // console.log(personal);
 
   const navigate = useNavigate();
 

@@ -7,7 +7,7 @@ const TheStackIcon = ({ name, icon }) => {
       {icon}
 
       {/* Name: MongoDB */}
-      <span>{name}</span>
+      <span className=" mt-1.5">{name}</span>
     </div>
   );
 };
