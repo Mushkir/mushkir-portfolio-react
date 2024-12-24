@@ -15,6 +15,9 @@ https://mushkir-portfolio-react.vercel.app/
 | 03   | [Aceternity UI](https://ui.aceternity.com/)                              |
 | 04   | [AOS](https://michalsnik.github.io/aos/)                                 |
 | 05   | [Framer-Motion](https://www.framer.com/)                                 |
+| 06   | [EmailJS](https://www.emailjs.com/)                                      |
+| 07   | [React Hook Form](https://react-hook-form.com/)                          |
+| 08   | [Zod](https://zod.dev/)                                                  |
 
 ### Screenshots
 
