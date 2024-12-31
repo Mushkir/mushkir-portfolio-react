@@ -1,7 +1,8 @@
 import SocialLinks from "../SocialLinks";
 import { TypewriterEffectSmooth } from "../ui/type-writer-effect";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-import resume from "../../assets/docs/Mushkir_Full_Stck_Engineer_Resume.pdf";
+import { Link } from "react-router-dom";
+// import resume from "../../assets/docs/Mushkir_Full_Stck_Engineer_Resume.pdf";
 
 const HeroDetail = () => {
   return (
@@ -53,13 +54,12 @@ const HeroDetail = () => {
           <SocialLinks />
 
           {/* Download Button */}
-          <a
+          <Link
+            to={"https://flowcv.com/resume/apkeuhs9a3"}
             data-aos="fade-right"
-            href={resume}
             target="_blank"
-            download="mohamed_mushkir.pdf"
             rel="noopener noreferrer"
-            className="w-full flex justify-center sm:justify-normal rounded-full sm:rounded-md items-center mt-5 text-aqua-color gap-2 sm:w-[220px] border-2 border-aqua-color px-5 py-2 hover:bg-aqua-color hover:text-primary-blue hover:font-semibold hover:transition 500"
+            className="w-full flex justify-center transition-all sm:justify-normal rounded-full sm:rounded-md items-center mt-5 text-aqua-color gap-2 sm:w-[220px] border-2 border-aqua-color px-5 py-2 hover:bg-aqua-color hover:text-primary-blue hover:font-semibold"
           >
             <div>
               <svg
@@ -75,7 +75,7 @@ const HeroDetail = () => {
               </svg>
             </div>
             Explore Resume
-          </a>
+          </Link>
         </div>
 
         {/* Hero Image */}

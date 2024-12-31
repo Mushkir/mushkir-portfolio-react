@@ -34,7 +34,7 @@ const TheFooterSection = () => {
   const form = useRef();
 
   const sendEmail = (data) => {
-    console.log(data.user_name);
+    // console.log(data.user_name);
 
     // e.preventDefault();
     emailjs
