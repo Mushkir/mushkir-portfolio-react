@@ -101,7 +101,7 @@ const TheNavBar = () => {
 
           <div className="xl:hidden">
             <button
-              className="focus:outline-none text-main-heading-color"
+              className="focus:outline-none text-aqua-color"
               onClick={toggleMenu}
             >
               {isOpen ? (

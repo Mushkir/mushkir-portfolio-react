@@ -297,32 +297,6 @@ const TechStacks = () => {
           name={"React JS"}
         />
 
-        {/* Vue */}
-        <TheStackIcon
-          icon={
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="3em"
-              height="3em"
-              viewBox="0 0 32 32"
-            >
-              <path
-                fill="#41b883"
-                d="M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6l3.22-5.6Z"
-              ></path>
-              <path
-                fill="#41b883"
-                d="m2 3.925l14 24.15l14-24.15h-5.6L16 18.415L7.53 3.925Z"
-              ></path>
-              <path
-                fill="#35495e"
-                d="M7.53 3.925L16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z"
-              ></path>
-            </svg>
-          }
-          name={"Vue JS"}
-        />
-
         {/* Node.js */}
         <TheStackIcon
           icon={
@@ -398,6 +372,83 @@ const TechStacks = () => {
             </svg>
           }
           name={"Node JS"}
+        />
+
+        {/* Next */}
+        <TheStackIcon
+          icon={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="3em"
+              height="3em"
+              viewBox="0 0 256 256"
+            >
+              <defs>
+                <linearGradient
+                  id="logosNextjsIcon0"
+                  x1="55.633%"
+                  x2="83.228%"
+                  y1="56.385%"
+                  y2="96.08%"
+                >
+                  <stop offset="0%" stopColor="#fff" />
+                  <stop offset="100%" stopColor="#fff" stopOpacity="0" />
+                </linearGradient>
+                <linearGradient
+                  id="logosNextjsIcon1"
+                  x1="50%"
+                  x2="49.953%"
+                  y1="0%"
+                  y2="73.438%"
+                >
+                  <stop offset="0%" stopColor="#fff" />
+                  <stop offset="100%" stopColor="#fff" stopOpacity="0" />
+                </linearGradient>
+                <circle id="logosNextjsIcon2" cx="128" cy="128" r="128" />
+              </defs>
+              <mask id="logosNextjsIcon3" fill="#fff">
+                <use href="#logosNextjsIcon2" />
+              </mask>
+              <g mask="url(#logosNextjsIcon3)">
+                <circle cx="128" cy="128" r="128" />
+                <path
+                  fill="url(#logosNextjsIcon0)"
+                  d="M212.634 224.028L98.335 76.8H76.8v102.357h17.228V98.68L199.11 234.446a128 128 0 0 0 13.524-10.418"
+                />
+                <path
+                  fill="url(#logosNextjsIcon1)"
+                  d="M163.556 76.8h17.067v102.4h-17.067z"
+                />
+              </g>
+            </svg>
+          }
+          name={"Next JS"}
+        />
+
+        {/* Vue */}
+        <TheStackIcon
+          icon={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="3em"
+              height="3em"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="#41b883"
+                d="M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6l3.22-5.6Z"
+              ></path>
+              <path
+                fill="#41b883"
+                d="m2 3.925l14 24.15l14-24.15h-5.6L16 18.415L7.53 3.925Z"
+              ></path>
+              <path
+                fill="#35495e"
+                d="M7.53 3.925L16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z"
+              ></path>
+            </svg>
+          }
+          name={"Vue JS"}
         />
 
         {/* Firebase */}

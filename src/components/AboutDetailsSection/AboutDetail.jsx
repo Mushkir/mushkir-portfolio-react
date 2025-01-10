@@ -99,6 +99,13 @@ const AboutDetail = () => {
           </Link>{" "}
           and Other stacks such as{" "}
           <Link
+            to={"https://nextjs.org/"}
+            target="_blank"
+            className=" text-primary-blue hover:underline font-semibold"
+          >
+            Next.js,
+          </Link>
+          <Link
             to={"https://vuejs.org/"}
             target="_blank"
             className=" text-primary-blue hover:underline font-semibold"
