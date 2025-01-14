@@ -336,7 +336,8 @@
           "Express.js | ",
           "React.js | ",
           "Node.js | ",
-          "TailwindCSS"
+          "TailwindCSS | ",
+          "Redux"
         ],
         "github": "https://github.com/Mushkir/ecommerce-app-mern",
         "imgLink": "https://i.ibb.co/Dtwsf7r/Screen-Shot-2024-11-27-at-14-00-02.png",
