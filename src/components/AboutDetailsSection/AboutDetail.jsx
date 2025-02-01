@@ -111,8 +111,26 @@ const AboutDetail = () => {
             className=" text-primary-blue hover:underline font-semibold"
           >
             {" "}
-            Vue.js{" "}
-          </Link>{" "}
+            Vue.js,
+          </Link>
+          <Link
+            to={"https://reactnative.dev/"}
+            target="_blank"
+            className=" text-primary-blue hover:underline font-semibold"
+          >
+            {" "}
+            React Native,{" "}
+          </Link>
+          <Link
+            to={
+              "https://firebase.google.com/?gad_source=1&gclid=EAIaIQobChMI2eOjxuiiiwMVWCWDAx3tdBtCEAAYASAAEgLzMvD_BwE&gclsrc=aw.ds"
+            }
+            target="_blank"
+            className=" text-primary-blue hover:underline font-semibold"
+          >
+            {" "}
+            Firebase{" "}
+          </Link>
           and{" "}
           <Link
             to={"https://laravel.com/"}
