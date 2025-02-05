@@ -34,7 +34,6 @@ const ServicesInfo = () => {
               </g>
             </svg>
           }
-          navigate="/tasks"
         />
 
         {/* Backend Development */}
@@ -60,7 +59,6 @@ const ServicesInfo = () => {
               />
             </svg>
           }
-          navigate="/coming"
         />
 
         {/* Custom Website Development */}
@@ -79,7 +77,6 @@ const ServicesInfo = () => {
               />
             </svg>
           }
-          navigate={"/fghfi"}
         />
 
         {/* Web Application Development */}
@@ -98,7 +95,29 @@ const ServicesInfo = () => {
               />
             </svg>
           }
-          navigate={"/fdgh"}
+        />
+
+        {/* Mobile App Dev */}
+        <Card
+          heading={"Mobile Application Development"}
+          icon={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="currentColor"
+                d="M23 7h4v4h-4zm0 6h4v4h-4zm-6-6h4v4h-4zm0 6h4v4h-4z"
+              ></path>
+              <circle cx="14.5" cy="24.5" r="1.5" fill="currentColor"></circle>
+              <path
+                fill="currentColor"
+                d="M21 30H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h13v2H8v24h13v-8h2v8a2 2 0 0 1-2 2"
+              ></path>
+            </svg>
+          }
         />
       </div>
     </div>

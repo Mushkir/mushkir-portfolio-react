@@ -43,7 +43,7 @@ const HeroDetail = () => {
 
           <div className="mb-5">
             <TextGenerateEffect
-              words={`I am interested in working on challenging web-based applications
+              words={`I am interested in working on challenging web-based and mobile applications
               or projects, as well as utilizing my development knowledge to
               provide solutions for clients.`}
               className={"text-secondary-font-color"}
