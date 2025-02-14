@@ -36,7 +36,7 @@ const HeroDetail = () => {
             <span className=" text-main-heading-color text-xl sm:text-2xl font-semibold">
               And I&apos;m a{" "}
               <span className="text-aqua-color">
-                Passionate Full Stack Web Developer;s
+                Passionate Full Stack Web Developer
               </span>
             </span>
           </div>
