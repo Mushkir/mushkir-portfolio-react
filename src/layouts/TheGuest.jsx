@@ -1,11 +1,14 @@
 import TheNavBar from "../components/TheNavBar";
 import { Outlet } from "react-router-dom";
+import PreventPullToRefresh from "../components/ThePreventPullToRefresh";
 
 const TheGuestLayout = () => {
   return (
     <div className="font-Sen">
-      <TheNavBar />
-      <Outlet />
+      <PreventPullToRefresh>
+        <TheNavBar />
+        <Outlet />
+      </PreventPullToRefresh>
     </div>
   );
 };
