@@ -3,25 +3,35 @@ import PropTypes from "prop-types";
 
 const PreventPullToRefresh = ({ children }) => {
   useEffect(() => {
+    let startY = 0;
+
+    const handleTouchStart = (e) => {
+      startY = e.touches[0].clientY;
+    };
+
     const disablePullToRefresh = (e) => {
-      // Prevent default action if the touch move is vertical
-      if (e.touches.length > 1 || e.touches[0].clientY > 0) {
+      const currentY = e.touches[0].clientY;
+
+      // Prevent pull-to-refresh only when at the top and swiping down
+      if (window.scrollY === 0 && currentY > startY) {
         e.preventDefault();
       }
     };
 
-    // Add event listener to the document
+    document.addEventListener("touchstart", handleTouchStart, {
+      passive: true,
+    });
     document.addEventListener("touchmove", disablePullToRefresh, {
       passive: false,
     });
 
-    // Clean up the event listener on unmount
     return () => {
+      document.removeEventListener("touchstart", handleTouchStart);
       document.removeEventListener("touchmove", disablePullToRefresh);
     };
   }, []);
 
-  return <div style={{ touchAction: "pan-x" }}>{children}</div>;
+  return <div style={{ touchAction: "pan-x pan-y" }}>{children}</div>;
 };
 
 PreventPullToRefresh.propTypes = {
