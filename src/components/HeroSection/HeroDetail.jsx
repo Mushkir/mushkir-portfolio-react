@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const HeroDetail = () => {
   return (
     <div className="bg-primary-blue px-5 md:px-20 pt-28 pb-28">
-      <div className="md:flex gap-20 justify-between mt-12 md:mt-28">
+      <div className="flex flex-col-reverse lg:flex-row gap-20 justify-between mt-12 md:mt-28">
         {/* Hero Details */}
         <div className="mb-10 sm:mb-5 md:mt-10">
           <TypewriterEffectSmooth
