@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import Info from "./Icons/Info";
 
 const TaskCard = ({
   imgSource,
@@ -32,7 +33,16 @@ const TaskCard = ({
           {title}
         </h5>
 
-        <small className="block mb-3 text-slate-400">{remarks}</small>
+        {remarks ? (
+          <small className="flex items-center mb-3 gap-x-1 text-aqua-color">
+            <span className="text-lg ">
+              <Info />
+            </span>
+            {remarks}
+          </small>
+        ) : (
+          ""
+        )}
 
         <div className={`${remarks ? "mb-3" : "mb-5"}`}>
           <span className="text-white">Tech Stacks: </span>
