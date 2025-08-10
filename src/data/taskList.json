@@ -286,7 +286,8 @@
         "imgLink": "https://i.ibb.co/H4vtvtz/1.png",
         "type": "F&B",
         "projectType": "ac",
-        "description": "As a Software Engineering undergraduate, this project was done as a final year project, which involved creating a web-based application for a service hiring. The project is named \"Skill-Wave\" and aims to link service seekers with respective service providers through a web-based application. You can explore the GitHub repository to get further details of this project by clicking the GitHub button."
+        "description": "As a Software Engineering undergraduate, this project was done as a final year project, which involved creating a web-based application for a service hiring. The project is named \"Skill-Wave\" and aims to link service seekers with respective service providers through a web-based application. You can explore the GitHub repository to get further details of this project by clicking the GitHub button.",
+        "remarks": ""
       },
       {
         "id": 2,
@@ -304,7 +305,8 @@
         "imgLink": "https://i.ibb.co/zRCp8YY/Screenshot-2024-03-17-at-07-15-50-2.png",
         "type": "F&B",
         "projectType": "ac",
-        "description": "As Software Engineering undergraduates, we have been assigned an assessment from our campus, which involves creating a web-based application for a taxi service. The project is named \"City Taxi\" and aims to provide services through a web-based application. You can explore the GitHub repository to get further details and view the demo video of this project by clicking the GitHub button."
+        "description": "As Software Engineering undergraduates, we have been assigned an assessment from our campus, which involves creating a web-based application for a taxi service. The project is named \"City Taxi\" and aims to provide services through a web-based application. You can explore the GitHub repository to get further details and view the demo video of this project by clicking the GitHub button.",
+        "remarks": ""
       },
       {
         "id": 3,
@@ -323,7 +325,8 @@
         "imgLink": "https://i.ibb.co/RBwT7vP/Screen-Shot-2024-07-03-at-15-54-35-2.png",
         "type": "F&B",
         "projectType": "ac",
-        "description": "As Software Engineering undergraduates, we have been assigned an assessment from our campus, which involves creating a web-based application for a Bookselling organization. The project is named \"E-Book\" and aims to provide services through a web-based application. You can explore the GitHub repository to get further details of this project by clicking the GitHub button."
+        "description": "As Software Engineering undergraduates, we have been assigned an assessment from our campus, which involves creating a web-based application for a Bookselling organization. The project is named \"E-Book\" and aims to provide services through a web-based application. You can explore the GitHub repository to get further details of this project by clicking the GitHub button.",
+        "remarks": ""
       }
     ],
     "personal": [
@@ -343,7 +346,27 @@
         "imgLink": "https://i.ibb.co/Dtwsf7r/Screen-Shot-2024-11-27-at-14-00-02.png",
         "type": "F&B",
         "projectType": "personal",
-        "description": "WIP"
+        "description": "WIP",
+        "remarks": ""
+      }
+    ],
+    "titum": [
+      {
+        "id": 1,
+        "title": "Dealz Lab Ecommerce Web Application",
+        "live": "https://dealzlab.lk/",
+        "techStacks": [
+          "Laravel (Blade) | ",
+          "MySQL | ",
+          "React | ",
+          "JQuery - AJAX"
+        ],
+        "github": "",
+        "imgLink": "https://i.ibb.co/C3Tb3cvN/Screen-Shot-2025-08-10-at-23-49-49-2.png",
+        "type": "F&B",
+        "projectType": "titum",
+        "description": "WIP",
+        "remarks": "Associated with Titum (Pvt) Ltd."
       }
     ]
   }

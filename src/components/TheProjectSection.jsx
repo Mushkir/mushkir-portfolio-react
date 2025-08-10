@@ -4,8 +4,11 @@ import jsonData from "../data/taskList.json";
 import Swal from "sweetalert2";
 
 const TheProjectSection = () => {
-  const { tasks, academic, personal } = jsonData[0];
+  const { tasks, academic, personal, titum } = jsonData[0];
+
   // console.log(personal);
+
+  // console.log();
 
   const navigate = useNavigate();
 
@@ -46,9 +49,9 @@ const TheProjectSection = () => {
   };
 
   return (
-    <div className=" bg-primary-blue px-5 md:px-20 py-20" id="works">
+    <div className="px-5 py-20 bg-primary-blue md:px-20" id="works">
       <h4
-        className="text-3xl text-center md:text-left font-semibold text-main-heading-color mb-10"
+        className="mb-10 text-3xl font-semibold text-center md:text-left text-main-heading-color"
         data-aos="fade-right"
         data-aos-duration="2500"
       >
@@ -56,14 +59,15 @@ const TheProjectSection = () => {
       </h4>
 
       {/* Card */}
-      <div className="sm:flex items-center justify-center sm:gap-16 flex-wrap">
+      <div className="flex-wrap items-center justify-center sm:flex sm:gap-16">
         {/* ClickShop */}
         <TaskCard
-          imgSource={personal[0].imgLink}
-          title={personal[0].title}
-          liveUrl={""}
-          githubUrl={personal[0].github}
-          techStacks={personal[0].techStacks}
+          imgSource={titum[0].imgLink}
+          title={titum[0].title}
+          liveUrl={titum[0].live}
+          githubUrl={""}
+          techStacks={titum[0].techStacks}
+          remarks={titum[0].remarks}
         />
 
         {/* Skill-wave */}
@@ -95,7 +99,7 @@ const TheProjectSection = () => {
       </div>
 
       <button
-        className=" border border-aqua-color text-aqua-color px-5 py-2 rounded-md flex items-center gap-2 mx-auto mt-10 hover:bg-aqua-color hover:text-primary-blue hover:transition 500 hover:font-semibold"
+        className="flex items-center gap-2 px-5 py-2 mx-auto mt-10 border rounded-md border-aqua-color text-aqua-color hover:bg-aqua-color hover:text-primary-blue hover:transition 500 hover:font-semibold"
         onClick={navigateTaskPage}
         data-aos="fade-right"
         data-aos-duration="2500"

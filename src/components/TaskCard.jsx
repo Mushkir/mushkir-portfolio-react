@@ -1,28 +1,42 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const TaskCard = ({ imgSource, title, liveUrl, githubUrl, techStacks }) => {
+const TaskCard = ({
+  imgSource,
+  title,
+  liveUrl,
+  githubUrl,
+  techStacks,
+  remarks,
+}) => {
   return (
     <div
-      className="w-full sm:w-[400px] h-[510px] sm:h-[490px] border rounded-md shado mb-5 bg-[#222f44] border-gray-700"
+      // h-[530px]
+      className="w-full sm:w-[400px] h-fit border rounded-md shado mb-5 bg-[#222f44] border-gray-700"
       data-aos="fade-right"
       data-aos-duration="2500"
     >
       <div className="w-full h-64">
         <img
-          className="rounded-t-lg w-full h-full object-cover"
+          className="object-cover w-full h-full rounded-t-lg"
           src={imgSource}
           alt={`${title}'s Screenshot`}
         />
       </div>
       <div className="p-5">
-        <h5 className="text-lg sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-5">
+        <h5
+          className={`${
+            remarks ? "mb-3" : "mb-5"
+          } text-lg font-bold tracking-tight text-gray-900 sm:text-2xl dark:text-white`}
+        >
           {title}
         </h5>
 
-        <div className="mb-5">
+        <small className="block mb-3 text-slate-400">{remarks}</small>
+
+        <div className={`${remarks ? "mb-3" : "mb-5"}`}>
           <span className="text-white">Tech Stacks: </span>
-          <span className=" text-gray-400">{techStacks}</span>
+          <span className="text-gray-400 ">{techStacks}</span>
         </div>
 
         <div>
@@ -30,7 +44,7 @@ const TaskCard = ({ imgSource, title, liveUrl, githubUrl, techStacks }) => {
             <Link
               to={githubUrl}
               target="_blank"
-              className=" flex w-full justify-center items-center gap-2 pl-3 pr-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-5"
+              className="flex items-center justify-center w-full gap-2 py-2 pl-3 pr-5 mb-5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               <div>
                 <svg
@@ -47,12 +61,12 @@ const TaskCard = ({ imgSource, title, liveUrl, githubUrl, techStacks }) => {
               </div>
               GitHub Repo
             </Link>
-          ) : (
-            <div className="sm:flex items-center gap-5">
+          ) : githubUrl ? (
+            <div className="items-center gap-5 sm:flex">
               <Link
                 to={githubUrl}
                 target="_blank"
-                className=" flex w-full justify-center items-center gap-2 pl-3 pr-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-5"
+                className="flex items-center justify-center w-full gap-2 py-2 pl-3 pr-5 mb-5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 <div>
                   <svg
@@ -72,7 +86,30 @@ const TaskCard = ({ imgSource, title, liveUrl, githubUrl, techStacks }) => {
               <Link
                 to={liveUrl}
                 target="_blank"
-                className=" flex w-full justify-center items-center gap-2 pl-3 pr-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-5"
+                className="flex items-center justify-center w-full gap-2 py-2 pl-3 pr-5 mb-5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M5.99 4.929a.75.75 0 0 1 0 1.06a8.5 8.5 0 0 0 0 12.021a.75.75 0 0 1-1.061 1.06c-3.905-3.905-3.905-10.236 0-14.141a.75.75 0 0 1 1.06 0m13.081 0c3.905 3.905 3.905 10.237 0 14.142a.75.75 0 0 1-1.06-1.06a8.5 8.5 0 0 0 0-12.022a.75.75 0 1 1 1.06-1.06M8.818 7.757a.75.75 0 0 1 0 1.06a4.5 4.5 0 0 0 0 6.365a.75.75 0 0 1-1.06 1.06a6 6 0 0 1 0-8.485a.75.75 0 0 1 1.06 0m7.425 0a6 6 0 0 1 0 8.485a.75.75 0 1 1-1.061-1.06a4.5 4.5 0 0 0 0-6.364a.75.75 0 0 1 1.06-1.06M12 10.5a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3"
+                    ></path>
+                  </svg>
+                </div>
+                Watch Live
+              </Link>
+            </div>
+          ) : (
+            <div className="items-center gap-5 sm:flex">
+              <Link
+                to={liveUrl}
+                target="_blank"
+                className="flex items-center justify-center w-full gap-2 py-2 pl-3 pr-5 mb-5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 <div>
                   <svg
@@ -102,6 +139,7 @@ TaskCard.propTypes = {
   title: PropTypes.string,
   liveUrl: PropTypes.string,
   githubUrl: PropTypes.string,
+  remarks: PropTypes.string,
   techStacks: PropTypes.array,
 };
 
