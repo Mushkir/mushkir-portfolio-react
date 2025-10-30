@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dxkit-org/react-floating-whatsapp": "^1.0.9",
     "@emailjs/browser": "^4.3.3",
     "@hookform/resolvers": "^3.3.4",
     "aos": "^2.3.4",
@@ -22,7 +23,7 @@
     "flowbite-react": "^0.7.2",
     "framer-motion": "^11.0.14",
     "html2canvas": "^1.4.1",
-    "jspdf": "^2.5.2",
+    "jspdf": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.0",
@@ -45,6 +46,6 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "tailwindcss-animate": "^1.0.7",
-    "vite": "^5.0.8"
+    "vite": "^7.1.12"
   }
 }
