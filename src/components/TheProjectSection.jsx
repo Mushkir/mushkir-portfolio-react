@@ -4,11 +4,7 @@ import jsonData from "../data/taskList.json";
 import Swal from "sweetalert2";
 
 const TheProjectSection = () => {
-  const { tasks, academic, personal, titum } = jsonData[0];
-
-  // console.log(personal);
-
-  // console.log();
+  const { academic, titum } = jsonData[0];
 
   const navigate = useNavigate();
 
