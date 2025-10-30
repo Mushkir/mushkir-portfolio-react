@@ -353,8 +353,8 @@
     "titum": [
       {
         "id": 1,
-        "title": "Dealz Lab Ecommerce Web Application",
-        "live": "https://dealzlab.lk/",
+        "title": "EBaby Ecommerce Web Application",
+        "live": "https://ebaby.lk/",
         "techStacks": [
           "Laravel (Blade) | ",
           "MySQL | ",
@@ -362,10 +362,10 @@
           "JQuery - AJAX"
         ],
         "github": "",
-        "imgLink": "https://i.ibb.co/C3Tb3cvN/Screen-Shot-2025-08-10-at-23-49-49-2.png",
+        "imgLink": "https://i.ibb.co/FkpNgYCB/Screen-Shot-2025-10-31-at-01-12-12-2.png",
         "type": "F&B",
         "projectType": "titum",
-        "description": "WIP",
+        "description": "eBaby is a fully functional e-commerce website developed for a client from Wattala, Sri Lanka. The platform provides a seamless online shopping experience, allowing customers to browse products, add them to the cart, and make secure purchases. It is integrated with Genie and Koko payment gateways to ensure smooth and reliable online transactions. The system includes key features such as user authentication, product and order management, and real-time payment confirmation, delivering a convenient and secure shopping experience for users.",
         "remarks": "Associated with Titum (Pvt) Ltd."
       }
     ]

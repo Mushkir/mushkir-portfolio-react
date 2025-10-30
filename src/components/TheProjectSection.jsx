@@ -27,7 +27,7 @@ const TheProjectSection = () => {
         icon: "info",
         showCancelButton: true,
         confirmButtonText: "Internship Tasks",
-        cancelButtonText: "Academic Projects",
+        cancelButtonText: "Projects in Titum",
         reverseButtons: true,
       })
       .then((result) => {
@@ -38,7 +38,7 @@ const TheProjectSection = () => {
           /* Read more about handling dismissals below */
           result.dismiss === Swal.DismissReason.cancel
         ) {
-          const academicProjectPath = "/academic-projects";
+          const academicProjectPath = "/titum";
           navigate(academicProjectPath);
         }
       });

@@ -6,6 +6,7 @@ import TheGuestLayout from "./layouts/TheGuest.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import TaskPage from "./pages/TaskPage.jsx";
 import TheAcademicProjectsPage from "./pages/AcademicProjectsPage.jsx";
+import Titum from "./pages/Titum.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/tasks",
         element: <TaskPage />,
+      },
+      {
+        path: "/titum",
+        element: <Titum />,
       },
     ],
   },
