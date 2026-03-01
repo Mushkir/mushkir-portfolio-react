@@ -7,7 +7,7 @@ import TheFooterSection from "../components/Footer";
 import TheFootNote from "../components/TheFootNote";
 import TheProjectSection from "../components/TheProjectSection";
 import TheHeaderProgressBar from "../components/HeaderProgressBar/TheHeaderProgressBar";
-import { FloatingWhatsApp } from "@dxkit-org/react-floating-whatsapp";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const HomePage = () => {
   return (
