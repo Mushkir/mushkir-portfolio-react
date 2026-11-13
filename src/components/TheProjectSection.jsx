@@ -74,8 +74,7 @@ const TheProjectSection = () => {
         <TaskCard
           imgSource={secondaryCard.imgLink}
           title={secondaryCard.title}
-          liveUrl={""}
-          githubUrl={secondaryCard.github}
+          liveUrl={secondaryCard.liveUrl}
           techStacks={secondaryCard.techStacks}
         />
 
