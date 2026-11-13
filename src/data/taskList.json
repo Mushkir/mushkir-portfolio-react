@@ -348,6 +348,18 @@
         "projectType": "personal",
         "description": "WIP",
         "remarks": ""
+      },
+      {
+        "id": 2,
+        "title": "Hafil King Travels",
+        "live": "https://hafilkingtravels.com/",
+        "techStacks": ["Laravel | ", "React | ", "Inertia.js | ", "MySQL"],
+        "github": "",
+        "imgLink": "https://i.ibb.co/CLjh9bj/Screenshot-2026-11-13-at-16-04-01.png",
+        "type": "F&B",
+        "projectType": "personal",
+        "description": "Hafil King Travels is a Sri Lankan travel agency based in Eravur, specialising in international air ticketing, tourist and visit visa assistance, and comprehensive travel arrangements. The company aims to make international travel easier by helping customers find suitable flight options, understand visa requirements, prepare application documents, and organise their travel plans. With services covering popular destinations across the Middle East, Asia, and Europe, Hafil King Travels serves individuals, families, business travellers, and people planning international journeys. Its service approach focuses on convenient booking, personalised assistance, competitive travel options, and customer support throughout the travel-planning process.",
+        "remarks": ""
       }
     ],
     "titum": [
@@ -366,6 +378,18 @@
         "type": "F&B",
         "projectType": "titum",
         "description": "eBaby is a fully functional e-commerce website developed for a client from Wattala, Sri Lanka. The platform provides a seamless online shopping experience, allowing customers to browse products, add them to the cart, and make secure purchases. It is integrated with Genie and Koko payment gateways to ensure smooth and reliable online transactions. The system includes key features such as user authentication, product and order management, and real-time payment confirmation, delivering a convenient and secure shopping experience for users.",
+        "remarks": "Associated with Titum (Pvt) Ltd."
+      },
+      {
+        "id": 2,
+        "title": "Titum Solutions (V2.0)",
+        "live": "https://ebaby.lk/",
+        "techStacks": ["Laravel | ", "React | ", "Inertia.js | ", "MySQL"],
+        "github": "",
+        "imgLink": "https://i.ibb.co/93CSPVTY/Screenshot-2026-11-13-at-16-10-42.png",
+        "type": "F&B",
+        "projectType": "titum",
+        "description": "Titum (Pvt) Ltd is a Sri Lankan software development and Information and Communication Technology (ICT) solutions company that helps businesses improve their operations through innovative technology and customised software solutions. The company specialises in web application development, mobile application development, business management systems, e-commerce solutions, system software, and digital marketing. The Version 2.0 website was developed to provide an improved digital presence for the company while allowing authorised administrators to manage and update website content without requiring direct changes to the source code.",
         "remarks": "Associated with Titum (Pvt) Ltd."
       }
     ]

@@ -1,10 +1,14 @@
-import TaskCard from "./TaskCard";
 import { useNavigate } from "react-router-dom";
-import jsonData from "../data/taskList.json";
 import Swal from "sweetalert2";
+import jsonData from "../data/taskList.json";
+import TaskCard from "./TaskCard";
 
 const TheProjectSection = () => {
-  const { academic, titum } = jsonData[0];
+  const { academic, titum, personal } = jsonData[0];
+
+  const firstCard = titum[1];
+  const secondaryCard = personal[1];
+  const thirdCard = titum[0];
 
   const navigate = useNavigate();
 
@@ -56,33 +60,41 @@ const TheProjectSection = () => {
 
       {/* Card */}
       <div className="flex-wrap items-center justify-center sm:flex sm:gap-16">
-        {/* ClickShop */}
+        {/* Titum */}
         <TaskCard
-          imgSource={titum[0].imgLink}
-          title={titum[0].title}
-          liveUrl={titum[0].live}
+          imgSource={firstCard.imgLink}
+          title={firstCard.title}
+          liveUrl={firstCard.live}
           githubUrl={""}
-          techStacks={titum[0].techStacks}
-          remarks={titum[0].remarks}
+          techStacks={firstCard.techStacks}
+          remarks={firstCard.remarks}
         />
 
-        {/* Skill-wave */}
+        {/* Hafil King Travels */}
         <TaskCard
-          imgSource={academic[0].imgLink}
-          title={academic[0].title}
+          imgSource={secondaryCard.imgLink}
+          title={secondaryCard.title}
           liveUrl={""}
-          githubUrl={academic[0].github}
-          techStacks={academic[0].techStacks}
+          githubUrl={secondaryCard.github}
+          techStacks={secondaryCard.techStacks}
+        />
+
+        <TaskCard
+          imgSource={thirdCard.imgLink}
+          title={thirdCard.title}
+          liveUrl={""}
+          githubUrl={thirdCard.github}
+          techStacks={thirdCard.techStacks}
         />
 
         {/* City taxi */}
-        <TaskCard
+        {/* <TaskCard
           imgSource={academic[1].imgLink}
           title={academic[1].title}
           liveUrl={academic[1].live}
           githubUrl={academic[1].github}
           techStacks={academic[1].techStacks}
-        />
+        /> */}
 
         {/*  E-Book */}
         <TaskCard
