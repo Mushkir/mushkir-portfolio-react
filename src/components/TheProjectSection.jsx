@@ -85,6 +85,7 @@ const TheProjectSection = () => {
           liveUrl={""}
           githubUrl={thirdCard.github}
           techStacks={thirdCard.techStacks}
+          remarks={thirdCard.remarks}
         />
 
         {/* City taxi */}
